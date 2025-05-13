@@ -1,0 +1,37 @@
+C:\Users\LENOVO\source\repos\Quanlyquancf\Quanlyquancf\bin\Debug\Quanlyquancf.exe.config
+C:\Users\LENOVO\source\repos\Quanlyquancf\Quanlyquancf\bin\Debug\Quanlyquancf.exe
+C:\Users\LENOVO\source\repos\Quanlyquancf\Quanlyquancf\bin\Debug\Quanlyquancf.pdb
+C:\Users\LENOVO\source\repos\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.csproj.AssemblyReference.cache
+C:\Users\LENOVO\source\repos\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Properties.Resources.resources
+C:\Users\LENOVO\source\repos\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.csproj.GenerateResource.cache
+C:\Users\LENOVO\source\repos\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.exe
+C:\Users\LENOVO\source\repos\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.pdb
+C:\Users\LENOVO\source\repos\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Dangnhap.resources
+C:\Users\LENOVO\source\repos\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Hethongquanly.resources
+C:\Users\LENOVO\source\repos\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.AccountProfile.resources
+C:\Users\LENOVO\source\repos\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Dangki.resources
+C:\Users\LENOVO\source\repos\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Quanlyban.resources
+C:\Users\LENOVO\source\repos\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Quanlykhachhang.resources
+C:\Users\LENOVO\source\repos\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Quanlykho.resources
+C:\Users\LENOVO\source\repos\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Quanlykhuvuc.resources
+C:\Users\LENOVO\source\repos\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Quanlynhanvien.resources
+D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\bin\Debug\Quanlyquancf.exe.config
+D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\bin\Debug\Quanlyquancf.exe
+D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\bin\Debug\Quanlyquancf.pdb
+D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.csproj.AssemblyReference.cache
+D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.AccountProfile.resources
+D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Dangki.resources
+D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Dangnhap.resources
+D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Hethongquanly.resources
+D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Properties.Resources.resources
+D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Quanlyban.resources
+D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Quanlykhachhang.resources
+D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Quanlykho.resources
+D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Quanlykhuvuc.resources
+D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Quanlynhanvien.resources
+D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.csproj.GenerateResource.cache
+D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.csproj.CoreCompileInputs.cache
+D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.exe
+D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.pdb
+D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Khachhang.resources
