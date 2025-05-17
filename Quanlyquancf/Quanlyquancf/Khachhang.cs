@@ -53,5 +53,10 @@ namespace Quanlyquancf
             comboBox2.DataSource = data;
             comboBox2.DisplayMember = "TENSP"; // ← dòng này là quan trọng
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

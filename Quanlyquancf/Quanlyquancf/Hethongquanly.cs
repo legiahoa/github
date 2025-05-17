@@ -27,15 +27,12 @@ namespace Quanlyquancf
 
         private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
             AccountProfile f = new AccountProfile();
             f.ShowDialog();
         }
 
-        private void đăngKíToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Dangki h = new Dangki();
-            h.ShowDialog();
-        }
+     
 
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -89,6 +86,11 @@ namespace Quanlyquancf
 
             comboBox2.DataSource = data;
             comboBox2.DisplayMember = "TENSP"; // ← dòng này là quan trọng
+        }
+
+        private void Hethongquanly_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -21,7 +21,6 @@ D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\bin\Debug\
 D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\bin\Debug\Quanlyquancf.pdb
 D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.csproj.AssemblyReference.cache
 D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.AccountProfile.resources
-D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Dangki.resources
 D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Dangnhap.resources
 D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Hethongquanly.resources
 D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Properties.Resources.resources
@@ -35,3 +34,5 @@ D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\
 D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.exe
 D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.pdb
 D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Khachhang.resources
+D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Dangkikhachhang.resources
+D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Dangkinhanvien.resources

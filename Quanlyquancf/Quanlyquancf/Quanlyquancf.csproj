@@ -52,11 +52,17 @@
     <Compile Include="AccountProfile.Designer.cs">
       <DependentUpon>AccountProfile.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dangki.cs">
+    <Compile Include="Dangkikhachhang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dangki.Designer.cs">
-      <DependentUpon>Dangki.cs</DependentUpon>
+    <Compile Include="Dangkikhachhang.Designer.cs">
+      <DependentUpon>Dangkikhachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dangkinhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dangkinhanvien.Designer.cs">
+      <DependentUpon>Dangkinhanvien.cs</DependentUpon>
     </Compile>
     <Compile Include="Dangnhap.cs">
       <SubType>Form</SubType>
@@ -112,8 +118,11 @@
     <EmbeddedResource Include="AccountProfile.resx">
       <DependentUpon>AccountProfile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dangki.resx">
-      <DependentUpon>Dangki.cs</DependentUpon>
+    <EmbeddedResource Include="Dangkikhachhang.resx">
+      <DependentUpon>Dangkikhachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dangkinhanvien.resx">
+      <DependentUpon>Dangkinhanvien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dangnhap.resx">
       <DependentUpon>Dangnhap.cs</DependentUpon>
