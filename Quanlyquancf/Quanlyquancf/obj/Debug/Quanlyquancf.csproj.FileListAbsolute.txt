@@ -36,3 +36,23 @@ D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\
 D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Khachhang.resources
 D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Dangkikhachhang.resources
 D:\UIT\HK4\LT MẠNG\ĐỒ ÁN\Quanlyquancf\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Dangkinhanvien.resources
+D:\Downloads\github\Quanlyquancf\Quanlyquancf\bin\Debug\Quanlyquancf.exe.config
+D:\Downloads\github\Quanlyquancf\Quanlyquancf\bin\Debug\Quanlyquancf.exe
+D:\Downloads\github\Quanlyquancf\Quanlyquancf\bin\Debug\Quanlyquancf.pdb
+D:\Downloads\github\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.csproj.AssemblyReference.cache
+D:\Downloads\github\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.AccountProfile.resources
+D:\Downloads\github\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Dangkikhachhang.resources
+D:\Downloads\github\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Dangkinhanvien.resources
+D:\Downloads\github\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Dangnhap.resources
+D:\Downloads\github\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Hethongquanly.resources
+D:\Downloads\github\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Khachhang.resources
+D:\Downloads\github\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Properties.Resources.resources
+D:\Downloads\github\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Quanlyban.resources
+D:\Downloads\github\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Quanlykhachhang.resources
+D:\Downloads\github\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Quanlykho.resources
+D:\Downloads\github\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Quanlykhuvuc.resources
+D:\Downloads\github\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.Quanlynhanvien.resources
+D:\Downloads\github\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.csproj.GenerateResource.cache
+D:\Downloads\github\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.csproj.CoreCompileInputs.cache
+D:\Downloads\github\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.exe
+D:\Downloads\github\Quanlyquancf\Quanlyquancf\obj\Debug\Quanlyquancf.pdb

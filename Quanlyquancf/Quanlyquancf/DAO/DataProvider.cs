@@ -27,7 +27,19 @@ namespace Quanlyquancf.DAO
 
             return data;
         }
-        
+
+        public int ExcuteNonQuery(string query)
+        {
+            int rowsAffected = 0;
+            using (SqlConnection connection = new SqlConnection(connectionSTR))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(query, connection);
+                rowsAffected = command.ExecuteNonQuery(); // Thực thi lệnh không trả về dữ liệu
+                connection.Close();
+            }
+            return rowsAffected; // Trả về số dòng bị ảnh hưởng
+        }
     }
     
 

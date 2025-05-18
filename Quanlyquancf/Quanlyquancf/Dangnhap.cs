@@ -78,40 +78,60 @@ namespace Quanlyquancf
             using (SqlConnection conn = new SqlConnection(connectSTR))
             {
                 conn.Open();
-                string query = "SELECT COUNT(*) FROM TAIKHOAN WHERE TENDANGNHAP = @user AND MATKHAU = @pass AND VAITRO = @role";
+                // Truy vấn đã được điều chỉnh để phù hợp với các bảng mới
+                string query = "SELECT COUNT(*), TK.TENDANGNHAP, TK.MATKHAU, NV.MANV, KH.MAKH " +
+                               "FROM TAIKHOAN TK " +
+                               "LEFT JOIN NHANVIEN NV ON TK.MATK = NV.MANV " + // Liên kết với bảng NHANVIEN qua MATK = MANV
+                               "LEFT JOIN KHACHHANG KH ON TK.MATK = KH.MAKH " + // Liên kết với bảng KHACHHANG qua MATK = MAKH
+                               "WHERE TK.TENDANGNHAP = @user AND TK.MATKHAU = @pass AND TK.VAITRO = @role " +
+                               "GROUP BY TK.TENDANGNHAP, TK.MATKHAU, NV.MANV, KH.MAKH";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@user", username);
                 cmd.Parameters.AddWithValue("@pass", password);
                 cmd.Parameters.AddWithValue("@role", vaiTro);
 
-                int count = (int)cmd.ExecuteScalar();
-                if (count > 0)
+
+
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
                 {
-                    MessageBox.Show($"Đăng nhập {vaiTro} thành công!");
-
-                    // TODO: Mở form chính theo vai trò
-                    if (vaiTro == "NhanVien")
+                    reader.Read();
+                    int count = reader.GetInt32(0);
+                    if (count > 0)
                     {
-                        Hethongquanly formNV = new Hethongquanly();
-                        this.Hide();
-                        formNV.ShowDialog();
-                        this.Show();
-                    }
-                    else if (vaiTro == "KhachHang")
-                    {
-                        
-                        Khachhang formKH = new Khachhang();
-                        this.Hide();
-                        formKH.ShowDialog();
-                        this.Show();
-                    }
+                        MessageBox.Show($"Đăng nhập {vaiTro} thành công!");
 
-                    //this.Hide();
+                        // Lấy Mã Nhân Viên hoặc Mã Khách Hàng
+                        string maNV = reader["MANV"] != DBNull.Value ? reader.GetString(reader.GetOrdinal("MANV")) : null;
+                        string maKH = reader["MAKH"] != DBNull.Value ? reader.GetString(reader.GetOrdinal("MAKH")) : null;
+                        // TODO: Mở form chính theo vai trò
+                        if (vaiTro == "NhanVien")
+                        {
+                            Hethongquanly formNV = new Hethongquanly(); // Truyền mã nhân viên
+                            this.Hide();
+                            formNV.ShowDialog();
+                            this.Show();
+                        }
+                        else if (vaiTro == "KhachHang")
+                        {
+                            Khachhang formKH = new Khachhang(maKH); // Truyền mã khách hàng
+                            this.Hide();
+                            formKH.ShowDialog();
+                            this.Show();
+                        }
+
+                        //this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sai tên đăng nhập, mật khẩu hoặc vai trò!");
+                    }
                 }
                 else
                 {
                     MessageBox.Show("Sai tên đăng nhập, mật khẩu hoặc vai trò!");
                 }
+                reader.Close();
             }
         }
     }
