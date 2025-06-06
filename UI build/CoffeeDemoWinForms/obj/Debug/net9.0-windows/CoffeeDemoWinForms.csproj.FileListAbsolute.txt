@@ -1,0 +1,14 @@
+C:\Users\LENOVO\Documents\UI build\CoffeeDemoWinForms\obj\Debug\net9.0-windows\CoffeeDemoWinForms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\Documents\UI build\CoffeeDemoWinForms\obj\Debug\net9.0-windows\CoffeeDemoWinForms.AssemblyInfoInputs.cache
+C:\Users\LENOVO\Documents\UI build\CoffeeDemoWinForms\obj\Debug\net9.0-windows\CoffeeDemoWinForms.AssemblyInfo.cs
+C:\Users\LENOVO\Documents\UI build\CoffeeDemoWinForms\obj\Debug\net9.0-windows\CoffeeDemoWinForms.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Documents\UI build\CoffeeDemoWinForms\bin\Debug\net9.0-windows\CoffeeDemoWinForms.exe
+C:\Users\LENOVO\Documents\UI build\CoffeeDemoWinForms\bin\Debug\net9.0-windows\CoffeeDemoWinForms.deps.json
+C:\Users\LENOVO\Documents\UI build\CoffeeDemoWinForms\bin\Debug\net9.0-windows\CoffeeDemoWinForms.runtimeconfig.json
+C:\Users\LENOVO\Documents\UI build\CoffeeDemoWinForms\bin\Debug\net9.0-windows\CoffeeDemoWinForms.dll
+C:\Users\LENOVO\Documents\UI build\CoffeeDemoWinForms\bin\Debug\net9.0-windows\CoffeeDemoWinForms.pdb
+C:\Users\LENOVO\Documents\UI build\CoffeeDemoWinForms\obj\Debug\net9.0-windows\CoffeeDemoWinForms.dll
+C:\Users\LENOVO\Documents\UI build\CoffeeDemoWinForms\obj\Debug\net9.0-windows\refint\CoffeeDemoWinForms.dll
+C:\Users\LENOVO\Documents\UI build\CoffeeDemoWinForms\obj\Debug\net9.0-windows\CoffeeDemoWinForms.pdb
+C:\Users\LENOVO\Documents\UI build\CoffeeDemoWinForms\obj\Debug\net9.0-windows\CoffeeDemoWinForms.genruntimeconfig.cache
+C:\Users\LENOVO\Documents\UI build\CoffeeDemoWinForms\obj\Debug\net9.0-windows\ref\CoffeeDemoWinForms.dll
