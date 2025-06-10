@@ -423,9 +423,7 @@ namespace Quanlyquancf
 
             if (result == DialogResult.Yes)
             {
-                
-                DataProvider dataProvider = new DataProvider();
-                SqlTransaction transaction = null; 
+                  DataProvider dataProvider = new DataProvider();
 
                 try
                 {
@@ -531,6 +529,9 @@ namespace Quanlyquancf
             this.Close();
         }
 
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
     }
 }

@@ -54,17 +54,19 @@ namespace CoffeeManagement.Forms
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel2);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(400, 600);
+            this.guna2Panel1.Size = new System.Drawing.Size(592, 923);
             this.guna2Panel1.TabIndex = 0;
-            //            // guna2PictureBox1
+            // 
+            // guna2PictureBox1
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            // this.guna2PictureBox1.Image = global::CoffeeManagement.Properties.Resources.coffee_logo;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(100, 150);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(150, 231);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(200, 200);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(300, 308);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -75,9 +77,10 @@ namespace CoffeeManagement.Forms
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(50, 370);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(75, 569);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(301, 47);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(551, 67);
             this.guna2HtmlLabel1.TabIndex = 1;
             this.guna2HtmlLabel1.Text = "QUẢN LÝ QUÁN CÀ PHÊ";
             // 
@@ -86,9 +89,10 @@ namespace CoffeeManagement.Forms
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(80, 430);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(120, 662);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(240, 23);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(395, 34);
             this.guna2HtmlLabel2.TabIndex = 2;
             this.guna2HtmlLabel2.Text = "Hệ thống quản lý hiện đại và tiện lợi";
             // 
@@ -103,19 +107,23 @@ namespace CoffeeManagement.Forms
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel4);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel3);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel2.Location = new System.Drawing.Point(400, 0);
+            this.guna2Panel2.Location = new System.Drawing.Point(592, 0);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(500, 600);
+            this.guna2Panel2.Size = new System.Drawing.Size(758, 923);
             this.guna2Panel2.TabIndex = 1;
             // 
             // chkShowPassword
             // 
             this.chkShowPassword.AutoSize = true;
+            this.chkShowPassword.CheckedState.BorderRadius = 0;
+            this.chkShowPassword.CheckedState.BorderThickness = 0;
             this.chkShowPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.chkShowPassword.ForeColor = System.Drawing.Color.Gray;
-            this.chkShowPassword.Location = new System.Drawing.Point(80, 320);
+            this.chkShowPassword.Location = new System.Drawing.Point(120, 492);
+            this.chkShowPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chkShowPassword.Name = "chkShowPassword";
-            this.chkShowPassword.Size = new System.Drawing.Size(109, 19);
+            this.chkShowPassword.Size = new System.Drawing.Size(153, 29);
             this.chkShowPassword.TabIndex = 7;
             this.chkShowPassword.Text = "Hiện mật khẩu";
             this.chkShowPassword.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -130,9 +138,10 @@ namespace CoffeeManagement.Forms
             this.btnRegisterEmployee.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnRegisterEmployee.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnRegisterEmployee.ForeColor = System.Drawing.Color.White;
-            this.btnRegisterEmployee.Location = new System.Drawing.Point(250, 470);
+            this.btnRegisterEmployee.Location = new System.Drawing.Point(375, 723);
+            this.btnRegisterEmployee.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRegisterEmployee.Name = "btnRegisterEmployee";
-            this.btnRegisterEmployee.Size = new System.Drawing.Size(170, 45);
+            this.btnRegisterEmployee.Size = new System.Drawing.Size(255, 69);
             this.btnRegisterEmployee.TabIndex = 6;
             this.btnRegisterEmployee.Text = "Đăng ký nhân viên";
             this.btnRegisterEmployee.Click += new System.EventHandler(this.btnRegisterEmployee_Click);
@@ -143,9 +152,10 @@ namespace CoffeeManagement.Forms
             this.btnRegisterCustomer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnRegisterCustomer.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnRegisterCustomer.ForeColor = System.Drawing.Color.White;
-            this.btnRegisterCustomer.Location = new System.Drawing.Point(80, 470);
+            this.btnRegisterCustomer.Location = new System.Drawing.Point(120, 723);
+            this.btnRegisterCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRegisterCustomer.Name = "btnRegisterCustomer";
-            this.btnRegisterCustomer.Size = new System.Drawing.Size(170, 45);
+            this.btnRegisterCustomer.Size = new System.Drawing.Size(255, 69);
             this.btnRegisterCustomer.TabIndex = 5;
             this.btnRegisterCustomer.Text = "Đăng ký khách hàng";
             this.btnRegisterCustomer.Click += new System.EventHandler(this.btnRegisterCustomer_Click);
@@ -153,12 +163,12 @@ namespace CoffeeManagement.Forms
             // btnLogin
             // 
             this.btnLogin.BorderRadius = 10;
-            this.btnLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(80, 360);
+            this.btnLogin.Location = new System.Drawing.Point(120, 554);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(340, 50);
+            this.btnLogin.Size = new System.Drawing.Size(510, 77);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "ĐĂNG NHẬP";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -175,13 +185,13 @@ namespace CoffeeManagement.Forms
             this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Location = new System.Drawing.Point(80, 270);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Location = new System.Drawing.Point(120, 415);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.PlaceholderText = "Nhập mật khẩu";
             this.txtPassword.SelectedText = "";
-            this.txtPassword.Size = new System.Drawing.Size(340, 40);
+            this.txtPassword.Size = new System.Drawing.Size(510, 62);
             this.txtPassword.TabIndex = 3;
             // 
             // txtUsername
@@ -196,13 +206,12 @@ namespace CoffeeManagement.Forms
             this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Location = new System.Drawing.Point(80, 180);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsername.Location = new System.Drawing.Point(120, 277);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.PasswordChar = '\0';
             this.txtUsername.PlaceholderText = "Nhập tên đăng nhập";
             this.txtUsername.SelectedText = "";
-            this.txtUsername.Size = new System.Drawing.Size(340, 40);
+            this.txtUsername.Size = new System.Drawing.Size(510, 62);
             this.txtUsername.TabIndex = 2;
             // 
             // guna2HtmlLabel4
@@ -210,9 +219,10 @@ namespace CoffeeManagement.Forms
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(80, 240);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(120, 369);
+            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(73, 23);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(117, 34);
             this.guna2HtmlLabel4.TabIndex = 1;
             this.guna2HtmlLabel4.Text = "Mật khẩu:";
             // 
@@ -221,20 +231,22 @@ namespace CoffeeManagement.Forms
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(80, 150);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(120, 231);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(118, 23);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(181, 34);
             this.guna2HtmlLabel3.TabIndex = 0;
             this.guna2HtmlLabel3.Text = "Tên đăng nhập:";
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 600);
+            this.ClientSize = new System.Drawing.Size(1350, 923);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
