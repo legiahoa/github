@@ -22,26 +22,43 @@ namespace CoffeeManagement_ver2
             txtPassword.PasswordChar = chkShowPassword.Checked ? '\0' : '*';
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private async void btnLogin_Click(object sender, EventArgs e)
         {
-           /* string username = txtUsername.Text.Trim();
+            string username = txtUsername.Text.Trim();
             string password = txtPassword.Text.Trim();
 
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
-            }*/
-            this.Hide(); 
-           AdminDashboard dashboard = new AdminDashboard(); 
-           // CustomerDashboard dashboard = new CustomerDashboard(); 
-            dashboard.ShowDialog(); 
-            this.Show(); 
+            }
+
+            FirebaseHelper firebaseService = new FirebaseHelper();
+            string role = await firebaseService.DangNhapAsync(username, password);
+
+            if (role == "NhanVien")
+            {
+                this.Hide();
+                AdminDashboard dashboard = new AdminDashboard();
+                dashboard.ShowDialog();
+                this.Show();
+            }
+            else if (role == "KhachHang")
+            {
+                this.Hide();
+                CustomerDashboard dashboard = new CustomerDashboard();
+                dashboard.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Tài khoản hoặc mật khẩu không đúng!", "Đăng nhập thất bại", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnRegisterCustomer_Click(object sender, EventArgs e)
         {
-            Dangkikhachhang regForm = new Dangkikhachhang();
+            Dangkikhachhang regForm = new Dangkikhachhang("KhachHang");
             this.Hide(); 
             regForm.ShowDialog();
             this.Show(); 
@@ -49,7 +66,7 @@ namespace CoffeeManagement_ver2
 
         private void btnRegisterEmployee_Click(object sender, EventArgs e)
         {
-            Dangkinhanvien regForm = new Dangkinhanvien();
+            Dangkinhanvien regForm = new Dangkinhanvien("NhanVien");
             this.Hide();
             regForm.ShowDialog();
             this.Show();
