@@ -21,7 +21,7 @@ namespace CoffeeManagement_ver2
         {
             this.Hide();
             Donhang donhangForm = new Donhang();
-            donhangForm.ShowDialog();
+            donhangForm.Show();
             this.Show();
         }
 
@@ -29,7 +29,7 @@ namespace CoffeeManagement_ver2
         {
             this.Hide();
             Thucdon thucdonForm = new Thucdon();    
-            thucdonForm.ShowDialog();   
+            thucdonForm.Show();   
             this.Show();
         }
 
@@ -37,7 +37,7 @@ namespace CoffeeManagement_ver2
         {
             this.Hide();    
             Ban banForm = new Ban();
-            banForm.ShowDialog();
+            banForm.Show();
             this.Show();
         }
 

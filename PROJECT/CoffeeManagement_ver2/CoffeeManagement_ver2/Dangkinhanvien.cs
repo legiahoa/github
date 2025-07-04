@@ -92,5 +92,10 @@ namespace CoffeeManagement_ver2
                 MessageBox.Show("Lỗi khi đăng ký: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void Dangkinhanvien_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

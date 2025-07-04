@@ -38,16 +38,16 @@ namespace CoffeeManagement_ver2
 
             if (role == "NhanVien")
             {
-                this.Hide();
+                //this.Hide();
                 AdminDashboard dashboard = new AdminDashboard();
-                dashboard.ShowDialog();
+                dashboard.Show();
                 this.Show();
             }
             else if (role == "KhachHang")
             {
-                this.Hide();
+                //this.Hide();
                 CustomerDashboard dashboard = new CustomerDashboard();
-                dashboard.ShowDialog();
+                dashboard.Show();
                 this.Show();
             }
             else

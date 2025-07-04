@@ -34,10 +34,27 @@ namespace CoffeeManagement_ver2
         public async Task<Dictionary<string, BanModel>> LayTatCaBanAsync()
         {
             var banList = await firebase
-                .Child("Ban")
-                .OnceAsync<BanModel>();
+            .Child("Ban")
+            .OnceAsync<BanModel>();
+
+            foreach (var item in banList)
+            {
+                string tenBan = item.Object.TenBan;
+                string khuVuc = item.Object.KhuVuc;
+
+                Console.WriteLine($"Tên bàn: {tenBan} - Khu vực: {khuVuc}");
+            }
+
 
             return banList.ToDictionary(b => b.Key, b => b.Object);
+        }
+        public async Task<List<MonAnModel>> LayTatCaMonAsync()
+        {
+            var monList = await firebase
+                .Child("MonAn")
+                .OnceAsync<MonAnModel>();
+
+            return monList.Select(m => m.Object).ToList();
         }
     }
 }

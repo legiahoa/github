@@ -36,7 +36,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.lblTongTienDisplay = new System.Windows.Forms.Label();
+            this.lblTongtien = new System.Windows.Forms.Label();
             this.lblBanDangChonDisplay = new System.Windows.Forms.Label();
             this.button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new Guna.UI2.WinForms.Guna2Panel();
@@ -49,23 +49,10 @@
             this.comboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.comboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnBan12 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnBan11 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnBan10 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnBan9 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnBan8 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnBan7 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnBan6 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnBan5 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnBan4 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnBan3 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnBan2 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnBan1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,7 +68,7 @@
             this.btnRooftop.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRooftop.ForeColor = System.Drawing.Color.White;
             this.btnRooftop.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(102)))), ((int)(((byte)(117)))));
-            this.btnRooftop.Location = new System.Drawing.Point(617, 756);
+            this.btnRooftop.Location = new System.Drawing.Point(627, 944);
             this.btnRooftop.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnRooftop.Name = "btnRooftop";
             this.btnRooftop.Size = new System.Drawing.Size(180, 78);
@@ -101,7 +88,7 @@
             this.btnPhongLanh.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnPhongLanh.ForeColor = System.Drawing.Color.White;
             this.btnPhongLanh.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(102)))), ((int)(((byte)(117)))));
-            this.btnPhongLanh.Location = new System.Drawing.Point(423, 756);
+            this.btnPhongLanh.Location = new System.Drawing.Point(433, 944);
             this.btnPhongLanh.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnPhongLanh.Name = "btnPhongLanh";
             this.btnPhongLanh.Size = new System.Drawing.Size(180, 78);
@@ -121,7 +108,7 @@
             this.btnNgoaiTroi.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnNgoaiTroi.ForeColor = System.Drawing.Color.White;
             this.btnNgoaiTroi.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(102)))), ((int)(((byte)(117)))));
-            this.btnNgoaiTroi.Location = new System.Drawing.Point(228, 756);
+            this.btnNgoaiTroi.Location = new System.Drawing.Point(238, 944);
             this.btnNgoaiTroi.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnNgoaiTroi.Name = "btnNgoaiTroi";
             this.btnNgoaiTroi.Size = new System.Drawing.Size(180, 78);
@@ -141,7 +128,7 @@
             this.btnTatCa.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnTatCa.ForeColor = System.Drawing.Color.White;
             this.btnTatCa.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(69)))), ((int)(((byte)(152)))));
-            this.btnTatCa.Location = new System.Drawing.Point(33, 756);
+            this.btnTatCa.Location = new System.Drawing.Point(43, 944);
             this.btnTatCa.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnTatCa.Name = "btnTatCa";
             this.btnTatCa.Size = new System.Drawing.Size(180, 78);
@@ -184,18 +171,19 @@
             this.listView1.Size = new System.Drawing.Size(1340, 786);
             this.listView1.TabIndex = 43;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
-            // lblTongTienDisplay
+            // lblTongtien
             // 
-            this.lblTongTienDisplay.AutoSize = true;
-            this.lblTongTienDisplay.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTongTienDisplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.lblTongTienDisplay.Location = new System.Drawing.Point(856, 1106);
-            this.lblTongTienDisplay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTongTienDisplay.Name = "lblTongTienDisplay";
-            this.lblTongTienDisplay.Size = new System.Drawing.Size(279, 45);
-            this.lblTongTienDisplay.TabIndex = 42;
-            this.lblTongTienDisplay.Text = "Tổng tiền: 0 VNĐ";
+            this.lblTongtien.AutoSize = true;
+            this.lblTongtien.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTongtien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.lblTongtien.Location = new System.Drawing.Point(856, 1106);
+            this.lblTongtien.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTongtien.Name = "lblTongtien";
+            this.lblTongtien.Size = new System.Drawing.Size(279, 45);
+            this.lblTongtien.TabIndex = 42;
+            this.lblTongtien.Text = "Tổng tiền: 0 VNĐ";
             // 
             // lblBanDangChonDisplay
             // 
@@ -227,6 +215,7 @@
             this.button1.Size = new System.Drawing.Size(225, 94);
             this.button1.TabIndex = 40;
             this.button1.Text = "Đặt món";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
@@ -268,6 +257,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(195, 84);
             this.guna2Button1.TabIndex = 8;
             this.guna2Button1.Text = "Xóa món";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // label3
             // 
@@ -345,6 +335,7 @@
             this.btnAdd.Size = new System.Drawing.Size(195, 84);
             this.btnAdd.TabIndex = 3;
             this.btnAdd.Text = "Thêm món";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // comboBox2
             // 
@@ -362,6 +353,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(417, 36);
             this.comboBox2.TabIndex = 1;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // comboBox1
             // 
@@ -379,255 +371,16 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(417, 36);
             this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.btnBan1);
-            this.flowLayoutPanel1.Controls.Add(this.btnBan2);
-            this.flowLayoutPanel1.Controls.Add(this.btnBan3);
-            this.flowLayoutPanel1.Controls.Add(this.btnBan4);
-            this.flowLayoutPanel1.Controls.Add(this.btnBan5);
-            this.flowLayoutPanel1.Controls.Add(this.btnBan6);
-            this.flowLayoutPanel1.Controls.Add(this.btnBan7);
-            this.flowLayoutPanel1.Controls.Add(this.btnBan8);
-            this.flowLayoutPanel1.Controls.Add(this.btnBan9);
-            this.flowLayoutPanel1.Controls.Add(this.btnBan10);
-            this.flowLayoutPanel1.Controls.Add(this.btnBan11);
-            this.flowLayoutPanel1.Controls.Add(this.btnBan12);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(4, 4);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(774, 405);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(774, 672);
             this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // btnBan12
-            // 
-            this.btnBan12.Animated = true;
-            this.btnBan12.BorderRadius = 10;
-            this.btnBan12.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan12.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan12.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBan12.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBan12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(89)))), ((int)(((byte)(182)))));
-            this.btnBan12.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnBan12.ForeColor = System.Drawing.Color.White;
-            this.btnBan12.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(69)))), ((int)(((byte)(152)))));
-            this.btnBan12.Location = new System.Drawing.Point(568, 228);
-            this.btnBan12.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnBan12.Name = "btnBan12";
-            this.btnBan12.Size = new System.Drawing.Size(180, 109);
-            this.btnBan12.TabIndex = 23;
-            this.btnBan12.Text = "Bàn 12";
-            // 
-            // btnBan11
-            // 
-            this.btnBan11.Animated = true;
-            this.btnBan11.BorderRadius = 10;
-            this.btnBan11.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan11.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBan11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBan11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(195)))), ((int)(((byte)(199)))));
-            this.btnBan11.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnBan11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnBan11.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
-            this.btnBan11.Location = new System.Drawing.Point(380, 228);
-            this.btnBan11.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnBan11.Name = "btnBan11";
-            this.btnBan11.Size = new System.Drawing.Size(180, 109);
-            this.btnBan11.TabIndex = 22;
-            this.btnBan11.Text = "Bàn 11";
-            // 
-            // btnBan10
-            // 
-            this.btnBan10.Animated = true;
-            this.btnBan10.BorderRadius = 10;
-            this.btnBan10.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBan10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBan10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
-            this.btnBan10.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnBan10.ForeColor = System.Drawing.Color.White;
-            this.btnBan10.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(106)))), ((int)(((byte)(14)))));
-            this.btnBan10.Location = new System.Drawing.Point(192, 228);
-            this.btnBan10.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnBan10.Name = "btnBan10";
-            this.btnBan10.Size = new System.Drawing.Size(180, 109);
-            this.btnBan10.TabIndex = 21;
-            this.btnBan10.Text = "Bàn 10";
-            // 
-            // btnBan9
-            // 
-            this.btnBan9.Animated = true;
-            this.btnBan9.BorderRadius = 10;
-            this.btnBan9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBan9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBan9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.btnBan9.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnBan9.ForeColor = System.Drawing.Color.White;
-            this.btnBan9.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.btnBan9.Location = new System.Drawing.Point(4, 228);
-            this.btnBan9.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnBan9.Name = "btnBan9";
-            this.btnBan9.Size = new System.Drawing.Size(180, 109);
-            this.btnBan9.TabIndex = 20;
-            this.btnBan9.Text = "Bàn 9";
-            // 
-            // btnBan8
-            // 
-            this.btnBan8.Animated = true;
-            this.btnBan8.BorderRadius = 10;
-            this.btnBan8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBan8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBan8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.btnBan8.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnBan8.ForeColor = System.Drawing.Color.White;
-            this.btnBan8.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.btnBan8.Location = new System.Drawing.Point(568, 115);
-            this.btnBan8.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnBan8.Name = "btnBan8";
-            this.btnBan8.Size = new System.Drawing.Size(180, 109);
-            this.btnBan8.TabIndex = 19;
-            this.btnBan8.Text = "Bàn 8";
-            // 
-            // btnBan7
-            // 
-            this.btnBan7.Animated = true;
-            this.btnBan7.BorderRadius = 10;
-            this.btnBan7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBan7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBan7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(195)))), ((int)(((byte)(199)))));
-            this.btnBan7.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnBan7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnBan7.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
-            this.btnBan7.Location = new System.Drawing.Point(380, 115);
-            this.btnBan7.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnBan7.Name = "btnBan7";
-            this.btnBan7.Size = new System.Drawing.Size(180, 109);
-            this.btnBan7.TabIndex = 18;
-            this.btnBan7.Text = "Bàn 7";
-            // 
-            // btnBan6
-            // 
-            this.btnBan6.Animated = true;
-            this.btnBan6.BorderRadius = 10;
-            this.btnBan6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBan6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBan6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
-            this.btnBan6.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnBan6.ForeColor = System.Drawing.Color.White;
-            this.btnBan6.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(106)))), ((int)(((byte)(14)))));
-            this.btnBan6.Location = new System.Drawing.Point(192, 115);
-            this.btnBan6.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnBan6.Name = "btnBan6";
-            this.btnBan6.Size = new System.Drawing.Size(180, 109);
-            this.btnBan6.TabIndex = 17;
-            this.btnBan6.Text = "Bàn 6";
-            // 
-            // btnBan5
-            // 
-            this.btnBan5.Animated = true;
-            this.btnBan5.BorderRadius = 10;
-            this.btnBan5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBan5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBan5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(89)))), ((int)(((byte)(182)))));
-            this.btnBan5.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnBan5.ForeColor = System.Drawing.Color.White;
-            this.btnBan5.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(69)))), ((int)(((byte)(152)))));
-            this.btnBan5.Location = new System.Drawing.Point(4, 115);
-            this.btnBan5.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnBan5.Name = "btnBan5";
-            this.btnBan5.Size = new System.Drawing.Size(180, 109);
-            this.btnBan5.TabIndex = 16;
-            this.btnBan5.Text = "Bàn 5";
-            // 
-            // btnBan4
-            // 
-            this.btnBan4.Animated = true;
-            this.btnBan4.BorderRadius = 10;
-            this.btnBan4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBan4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBan4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.btnBan4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnBan4.ForeColor = System.Drawing.Color.White;
-            this.btnBan4.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.btnBan4.Location = new System.Drawing.Point(568, 2);
-            this.btnBan4.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnBan4.Name = "btnBan4";
-            this.btnBan4.Size = new System.Drawing.Size(180, 109);
-            this.btnBan4.TabIndex = 15;
-            this.btnBan4.Text = "Bàn 4";
-            // 
-            // btnBan3
-            // 
-            this.btnBan3.Animated = true;
-            this.btnBan3.BorderRadius = 10;
-            this.btnBan3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBan3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBan3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(195)))), ((int)(((byte)(199)))));
-            this.btnBan3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnBan3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnBan3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
-            this.btnBan3.Location = new System.Drawing.Point(380, 2);
-            this.btnBan3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnBan3.Name = "btnBan3";
-            this.btnBan3.Size = new System.Drawing.Size(180, 109);
-            this.btnBan3.TabIndex = 14;
-            this.btnBan3.Text = "Bàn 3";
-            // 
-            // btnBan2
-            // 
-            this.btnBan2.Animated = true;
-            this.btnBan2.BorderRadius = 10;
-            this.btnBan2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBan2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBan2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.btnBan2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnBan2.ForeColor = System.Drawing.Color.White;
-            this.btnBan2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.btnBan2.Location = new System.Drawing.Point(192, 2);
-            this.btnBan2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnBan2.Name = "btnBan2";
-            this.btnBan2.Size = new System.Drawing.Size(180, 109);
-            this.btnBan2.TabIndex = 13;
-            this.btnBan2.Text = "Bàn 2";
-            // 
-            // btnBan1
-            // 
-            this.btnBan1.Animated = true;
-            this.btnBan1.BorderRadius = 10;
-            this.btnBan1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBan1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBan1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBan1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.btnBan1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btnBan1.ForeColor = System.Drawing.Color.White;
-            this.btnBan1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
-            this.btnBan1.Location = new System.Drawing.Point(4, 2);
-            this.btnBan1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnBan1.Name = "btnBan1";
-            this.btnBan1.Size = new System.Drawing.Size(180, 109);
-            this.btnBan1.TabIndex = 12;
-            this.btnBan1.Text = "Bàn 1";
-            this.btnBan1.Click += new System.EventHandler(this.btnBan1_Click);
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // guna2ShadowPanel1
             // 
@@ -637,7 +390,7 @@
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(28, 236);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(782, 406);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(782, 679);
             this.guna2ShadowPanel1.TabIndex = 44;
             // 
             // CustomerDashboard
@@ -647,7 +400,7 @@
             this.ClientSize = new System.Drawing.Size(2200, 1356);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.lblTongTienDisplay);
+            this.Controls.Add(this.lblTongtien);
             this.Controls.Add(this.lblBanDangChonDisplay);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
@@ -659,10 +412,10 @@
             this.Controls.Add(this.btnTatCa);
             this.Name = "CustomerDashboard";
             this.Text = "CustomerDashboard";
+            this.Load += new System.EventHandler(this.CustomerDashboard_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -678,7 +431,7 @@
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Label lblTongTienDisplay;
+        private System.Windows.Forms.Label lblTongtien;
         private System.Windows.Forms.Label lblBanDangChonDisplay;
         private Guna.UI2.WinForms.Guna2Button button1;
         private Guna.UI2.WinForms.Guna2Panel panel2;
@@ -691,18 +444,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox comboBox2;
         private Guna.UI2.WinForms.Guna2ComboBox comboBox1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private Guna.UI2.WinForms.Guna2Button btnBan1;
-        private Guna.UI2.WinForms.Guna2Button btnBan2;
-        private Guna.UI2.WinForms.Guna2Button btnBan3;
-        private Guna.UI2.WinForms.Guna2Button btnBan4;
-        private Guna.UI2.WinForms.Guna2Button btnBan5;
-        private Guna.UI2.WinForms.Guna2Button btnBan6;
-        private Guna.UI2.WinForms.Guna2Button btnBan7;
-        private Guna.UI2.WinForms.Guna2Button btnBan8;
-        private Guna.UI2.WinForms.Guna2Button btnBan9;
-        private Guna.UI2.WinForms.Guna2Button btnBan10;
-        private Guna.UI2.WinForms.Guna2Button btnBan11;
-        private Guna.UI2.WinForms.Guna2Button btnBan12;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
     }
