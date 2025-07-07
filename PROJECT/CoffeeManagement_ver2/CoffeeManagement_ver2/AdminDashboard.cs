@@ -22,7 +22,7 @@ namespace CoffeeManagement_ver2
             this.Hide();
             Donhang donhangForm = new Donhang();
             donhangForm.Show();
-            this.Show();
+            //this.Show();
         }
 
         private void btnThucdon_Click(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace CoffeeManagement_ver2
             this.Hide();
             Thucdon thucdonForm = new Thucdon();    
             thucdonForm.Show();   
-            this.Show();
+            //this.Show();
         }
 
         private void btnBan_Click(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace CoffeeManagement_ver2
             this.Hide();    
             Ban banForm = new Ban();
             banForm.Show();
-            this.Show();
+           //this.Show();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)

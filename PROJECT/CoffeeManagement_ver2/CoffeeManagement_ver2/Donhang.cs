@@ -16,6 +16,7 @@ namespace CoffeeManagement_ver2
     public partial class Donhang : Form
     {
         private TcpListener listener;
+        private DateTime thoiGianMoForm;
         public Donhang()
         {
             InitializeComponent();
@@ -36,35 +37,46 @@ namespace CoffeeManagement_ver2
             this.Close();
         }
 
+        private HashSet<string> maDonDaXuLy = new HashSet<string>();
         private void Donhang_Load(object sender, EventArgs e)
         {
-            listener = new TcpListener(IPAddress.Any, 8080);
-            listener.Start();
+            thoiGianMoForm = DateTime.Now;
 
-            Task.Run(() =>
-            {
-                while (true)
+            FirebaseHelper firebaseHelper = new FirebaseHelper();
+
+            firebaseHelper.LangNgheDonHangMoi()
+                .Subscribe(don =>
                 {
-                    TcpClient client = listener.AcceptTcpClient();
-                    NetworkStream stream = client.GetStream();
+                    var donHang = don.Object;
+                    if (donHang == null || string.IsNullOrEmpty(donHang.MaDon))
+                        return;
 
-                    byte[] buffer = new byte[4096];
-                    int bytesRead = stream.Read(buffer, 0, buffer.Length);
-                    string json = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                    if (maDonDaXuLy.Contains(donHang.MaDon))
+                        return;
 
-                    DonHangModel donHang = JsonConvert.DeserializeObject<DonHangModel>(json);
+                    if (donHang.TrangThai != "Chờ xử lý")
+                        return;
 
-                    // Hiển thị ra giao diện hoặc xử lý đơn
-                    Invoke(new Action(() =>
+                    // Kiểm tra thời gian đơn hàng
+                    if (!DateTime.TryParseExact(donHang.ThoiGian, "dd/MM/yyyy HH:mm", null, System.Globalization.DateTimeStyles.None, out DateTime thoiGianDonHang))
+                        return;
+
+                    if (thoiGianDonHang < thoiGianMoForm)
+                        return; // bỏ qua đơn hàng cũ được tạo trước khi form mở
+
+                    maDonDaXuLy.Add(donHang.MaDon);
+
+                    if (this.IsHandleCreated)
                     {
-                        MessageBox.Show($"Đơn hàng mới từ {donHang.Ban} - {donHang.TongTien:N0} VNĐ");
-                        // TODO: thêm đơn hàng vào DataGridView hoặc Firebase tại đây
-                    }));
+                        this.Invoke(new Action(() =>
+                        {
+                            MessageBox.Show($"Đơn hàng mới từ {donHang.Ban} - {donHang.TongTien:N0} VNĐ");
+                            // TODO: thêm vào danh sách, bảng...
+                        }));
+                    }
 
-                    stream.Close();
-                    client.Close();
-                }
-            });
+                    _ = firebaseHelper.CapNhatTrangThaiDonHang(donHang.MaDon, "Đã nhận");
+                });
         }
 
         private void textBoxSearch_TextChanged(object sender, EventArgs e)

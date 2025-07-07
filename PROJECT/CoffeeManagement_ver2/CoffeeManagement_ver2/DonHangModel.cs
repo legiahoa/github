@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CoffeeManagement_ver2
 {
-    class DonHangModel
+    public class DonHangModel
     {
         public string MaDon { get; set; }
         public string Ban { get; set; }

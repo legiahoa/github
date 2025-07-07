@@ -121,8 +121,8 @@ namespace CoffeeManagement_ver2
             if (result == DialogResult.Yes)
             {
                 this.Hide();
-                LoginForm login = new LoginForm();
-                login.Show();
+                /*LoginForm login = new LoginForm();
+                login.Show();*/
                 this.Close();
             }
         }
@@ -236,7 +236,7 @@ namespace CoffeeManagement_ver2
             await KhoiTaoTatCaButtonBan(); // tạo tất cả button 1 lần duy nhất
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
             if (donHangTam.Count == 0)
             {
@@ -253,21 +253,14 @@ namespace CoffeeManagement_ver2
                 DanhSachMon = new List<DonHangItemModel>(donHangTam)
             };
 
-            string json = JsonConvert.SerializeObject(donHang);
-
             try
             {
-                TcpClient client = new TcpClient("127.0.0.1", 8080);
-                NetworkStream stream = client.GetStream();
-
-                byte[] data = Encoding.UTF8.GetBytes(json);
-                stream.Write(data, 0, data.Length);
-                stream.Close();
-                client.Close();
+                FirebaseHelper firebase = new FirebaseHelper();
+                await firebase.ThemDonHangVaoFirebase(donHang);
 
                 MessageBox.Show("Đặt món thành công!", "Thông báo");
 
-                // Reset đơn hàng
+                // Reset UI
                 listView1.Items.Clear();
                 lblTongtien.Text = "Tổng tiền: 0 VNĐ";
                 tongTien = 0;
@@ -278,6 +271,5 @@ namespace CoffeeManagement_ver2
                 MessageBox.Show("Lỗi gửi đơn hàng: " + ex.Message);
             }
         }
-
     }
 }

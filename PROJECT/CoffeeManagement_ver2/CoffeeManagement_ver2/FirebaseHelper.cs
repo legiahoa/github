@@ -7,6 +7,7 @@ using Firebase.Database;
 using Firebase.Database.Query;
 using System.Linq;
 using System.Threading.Tasks;
+using Firebase.Database.Streaming;
 
 namespace CoffeeManagement_ver2
 {
@@ -55,6 +56,26 @@ namespace CoffeeManagement_ver2
                 .OnceAsync<MonAnModel>();
 
             return monList.Select(m => m.Object).ToList();
+        }
+        public async Task ThemDonHangVaoFirebase(DonHangModel donHang)
+        {
+            await firebase
+                .Child("DonHang")
+                .PostAsync(donHang);
+        }
+        public IObservable<FirebaseEvent<DonHangModel>> LangNgheDonHangMoi()
+        {
+            return firebase
+                .Child("DonHang")
+                .AsObservable<DonHangModel>();
+        }
+        public async Task CapNhatTrangThaiDonHang(string maDon, string trangThaiMoi)
+        {
+            await firebase
+                .Child("DonHang")
+                .Child(maDon)
+                .Child("TrangThai")
+                .PutAsync(trangThaiMoi);
         }
     }
 }
