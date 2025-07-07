@@ -34,21 +34,22 @@ namespace CoffeeManagement_ver2
             }
 
             FirebaseHelper firebaseService = new FirebaseHelper();
-            string role = await firebaseService.DangNhapAsync(username, password);
+            TaiKhoanModel user = await firebaseService.DangNhapAsync(username, password);
 
-            if (role == "NhanVien")
+            if (user != null)
             {
-                //this.Hide();
-                AdminDashboard dashboard = new AdminDashboard();
-                dashboard.Show();
-                this.Show();
-            }
-            else if (role == "KhachHang")
-            {
-                //this.Hide();
-                CustomerDashboard dashboard = new CustomerDashboard();
-                dashboard.Show();
-                this.Show();
+                if (user.Role == "NhanVien")
+                {
+                    AdminDashboard dashboard = new AdminDashboard();
+                    dashboard.Show();
+                    this.Hide();
+                }
+                else if (user.Role == "KhachHang")
+                {
+                    CustomerDashboard dashboard = new CustomerDashboard(user);
+                    dashboard.Show();
+                    this.Hide();
+                }
             }
             else
             {

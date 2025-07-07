@@ -5,8 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Firebase.Database;
 using Firebase.Database.Query;
-using System.Linq;
-using System.Threading.Tasks;
 using Firebase.Database.Streaming;
 
 namespace CoffeeManagement_ver2
@@ -17,18 +15,18 @@ namespace CoffeeManagement_ver2
             "https://quanlycafe-4a7fa-default-rtdb.asia-southeast1.firebasedatabase.app/"
         );
 
-        public async Task<string> DangNhapAsync(string username, string password)
+        public async Task<TaiKhoanModel> DangNhapAsync(string username, string password)
         {
             var accounts = await firebase
                 .Child("TaiKhoan")
-                .OnceAsync<dynamic>();
+                .OnceAsync<TaiKhoanModel>();
 
             var matchedUser = accounts.FirstOrDefault(acc =>
                 acc.Object.Username == username &&
                 acc.Object.Password == password);
 
             if (matchedUser != null)
-                return matchedUser.Object.Role; // Trả về "NhanVien" hoặc "KhachHang"
+                return matchedUser.Object; // Trả về toàn bộ thông tin user
 
             return null; // Sai tài khoản
         }
@@ -71,19 +69,108 @@ namespace CoffeeManagement_ver2
         }
         public async Task CapNhatTrangThaiDonHang(string maDon, string trangThaiMoi)
         {
-            await firebase
-                .Child("DonHang")
-                .Child(maDon)
-                .Child("TrangThai")
-                .PutAsync(trangThaiMoi);
+            try
+            {
+                // Debug: In ra mã đơn để kiểm tra
+                Console.WriteLine($"Đang tìm đơn hàng với MaDon: {maDon}");
+                
+                // Tìm đơn hàng theo MaDon trong các record
+                var allRecords = await firebase
+                    .Child("DonHang")
+                    .OnceAsync<DonHangModel>();
+                
+                var targetRecord = allRecords.FirstOrDefault(r => r.Object.MaDon == maDon);
+                
+                if (targetRecord == null)
+                {
+                    throw new Exception($"Không tìm thấy đơn hàng với mã: {maDon}");
+                }
+                
+                string firebaseKey = targetRecord.Key;
+                Console.WriteLine($"Tìm thấy đơn hàng với Firebase key: {firebaseKey}");
+                
+                // Cập nhật trạng thái sử dụng Firebase key
+                await firebase
+                    .Child("DonHang")
+                    .Child(firebaseKey)
+                    .Child("TrangThai")
+                    .PutAsync($"\"{trangThaiMoi}\"");
+                    
+                Console.WriteLine($"Đã cập nhật thành công trạng thái: {trangThaiMoi}");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Lỗi cập nhật trạng thái đơn hàng: {ex.Message}");
+            }
         }
+
+        // Method để kiểm tra đơn hàng có tồn tại không
+        public async Task<bool> KiemTraDonHangTonTai(string maDon)
+        {
+            try
+            {
+                // Tìm đơn hàng theo MaDon trong các record
+                var allRecords = await firebase
+                    .Child("DonHang")
+                    .OnceAsync<DonHangModel>();
+                
+                var targetRecord = allRecords.FirstOrDefault(r => r.Object?.MaDon == maDon);
+                
+                return targetRecord != null;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        // Method để lấy tất cả keys đơn hàng (debug)
+        public async Task<List<string>> LayTatCaMaDonHang()
+        {
+            try
+            {
+                var donList = await firebase
+                    .Child("DonHang")
+                    .OnceAsync<DonHangModel>();
+
+                Console.WriteLine("=== DEBUG: Tất cả đơn hàng trong Firebase ===");
+                foreach (var item in donList)
+                {
+                    Console.WriteLine($"Firebase Key: {item.Key} -> MaDon: {item.Object?.MaDon}");
+                }
+                Console.WriteLine("==============================================");
+
+                return donList.Select(d => d.Object?.MaDon ?? d.Key).ToList();
+            }
+            catch
+            {
+                return new List<string>();
+            }
+        }
+
         public async Task<List<DonHangModel>> LayTatCaDonHangAsync()
         {
             var donList = await firebase
                 .Child("DonHang")
                 .OnceAsync<DonHangModel>();
 
-            return donList.Select(d => d.Object).ToList();
+            // Đảm bảo mỗi đơn hàng có MaDon đúng (nếu null thì dùng Firebase key)
+            var result = new List<DonHangModel>();
+            foreach (var item in donList)
+            {
+                var donHang = item.Object;
+                if (donHang != null)
+                {
+                    // Nếu MaDon bị null hoặc rỗng, dùng Firebase key
+                    if (string.IsNullOrEmpty(donHang.MaDon))
+                    {
+                        donHang.MaDon = item.Key;
+                    }
+                    result.Add(donHang);
+                }
+            }
+            
+            return result;
         }
     }
 }

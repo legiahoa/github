@@ -19,11 +19,34 @@ namespace CoffeeManagement_ver2
         private string banDangChon = "";
         private List<MonAnModel> danhSachMonAn = new List<MonAnModel>();
         private int tongTien = 0;
-        public CustomerDashboard()
+        
+        // Thông tin user hiện tại
+        private TaiKhoanModel currentUser;
+        
+        public CustomerDashboard(TaiKhoanModel user = null)
         {
             InitializeComponent();
+            currentUser = user;
             LoadDuLieuMonAn();
+            
+            // Hiển thị thông tin khách hàng đăng nhập
+            if (currentUser != null)
+            {
+                this.Text = $"Coffee Management - Xin chào {currentUser.HoTen}";
+            }
+            else
+            {
+                this.Text = "Coffee Management - Khách vãng lai";
+            }
         }
+        
+        // Method để logout
+        private void Logout()
+        {
+            currentUser = null;
+            this.Close();
+        }
+
         private async Task HienThiBanTheoKhuVuc(string khuVuc)
         {
             FirebaseHelper firebaseService = new FirebaseHelper();
@@ -244,13 +267,23 @@ namespace CoffeeManagement_ver2
                 return;
             }
 
+            if (string.IsNullOrEmpty(banDangChon))
+            {
+                MessageBox.Show("Vui lòng chọn bàn trước khi đặt!", "Thông báo");
+                return;
+            }
+
             var donHang = new DonHangModel
             {
                 MaDon = Guid.NewGuid().ToString(),
                 Ban = banDangChon,
                 ThoiGian = DateTime.Now.ToString("dd/MM/yyyy HH:mm"),
                 TongTien = tongTien,
-                DanhSachMon = new List<DonHangItemModel>(donHangTam)
+                DanhSachMon = new List<DonHangItemModel>(donHangTam),
+                // Thêm thông tin khách hàng từ user hiện tại
+                TenKhachHang = currentUser?.HoTen ?? "Khách vãng lai",
+                SoDienThoai = currentUser?.SoDienThoai ?? "",
+                GhiChu = "" // Có thể thêm textbox ghi chú nếu cần
             };
 
             try
@@ -258,13 +291,16 @@ namespace CoffeeManagement_ver2
                 FirebaseHelper firebase = new FirebaseHelper();
                 await firebase.ThemDonHangVaoFirebase(donHang);
 
-                MessageBox.Show("Đặt món thành công!", "Thông báo");
+                MessageBox.Show($"Đặt món thành công!\nKhách hàng: {donHang.TenKhachHang}\nBàn: {donHang.Ban}\nTổng tiền: {donHang.TongTien:N0} VNĐ", "Thông báo");
 
                 // Reset UI
                 listView1.Items.Clear();
                 lblTongtien.Text = "Tổng tiền: 0 VNĐ";
                 tongTien = 0;
                 donHangTam.Clear();
+                banDangChon = "";
+                lblBanDangChonDisplay.Text = "Chưa chọn bàn";
+                CapNhatMauButtonDaChon();
             }
             catch (Exception ex)
             {

@@ -14,5 +14,10 @@ namespace CoffeeManagement_ver2
         public string ThoiGian { get; set; }
         public int TongTien { get; set; }
         public List<DonHangItemModel> DanhSachMon { get; set; }
+        
+        // Thông tin khách hàng
+        public string TenKhachHang { get; set; }
+        public string SoDienThoai { get; set; }
+        public string GhiChu { get; set; }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CoffeeManagement_ver2
 {
-    class TaiKhoanModel
+    public class TaiKhoanModel
     {
         public string Username { get; set; }
         public string Password { get; set; }
