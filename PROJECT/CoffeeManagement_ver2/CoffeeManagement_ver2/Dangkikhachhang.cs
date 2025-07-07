@@ -33,6 +33,7 @@ namespace CoffeeManagement_ver2
         private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
         {
             txtPassword.PasswordChar = chkShowPassword.Checked ? '\0' : '*';
+            txtConfirmPassword.PasswordChar = chkShowPassword.Checked ? '\0' : '*';
         }
 
         private async void btnRegister_Click(object sender, EventArgs e)

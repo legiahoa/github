@@ -77,5 +77,13 @@ namespace CoffeeManagement_ver2
                 .Child("TrangThai")
                 .PutAsync(trangThaiMoi);
         }
+        public async Task<List<DonHangModel>> LayTatCaDonHangAsync()
+        {
+            var donList = await firebase
+                .Child("DonHang")
+                .OnceAsync<DonHangModel>();
+
+            return donList.Select(d => d.Object).ToList();
+        }
     }
 }
