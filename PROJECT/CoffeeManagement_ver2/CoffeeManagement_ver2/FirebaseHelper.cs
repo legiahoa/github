@@ -30,22 +30,76 @@ namespace CoffeeManagement_ver2
 
             return null; // Sai tài khoản
         }
+        // Lấy tất cả bàn, gán Id là key Firebase
+
         public async Task<Dictionary<string, BanModel>> LayTatCaBanAsync()
         {
             var banList = await firebase
-            .Child("Ban")
-            .OnceAsync<BanModel>();
+                .Child("Ban")
+                .OnceAsync<BanModel>();
 
+            var dict = new Dictionary<string, BanModel>();
             foreach (var item in banList)
             {
-                string tenBan = item.Object.TenBan;
-                string khuVuc = item.Object.KhuVuc;
-
-                Console.WriteLine($"Tên bàn: {tenBan} - Khu vực: {khuVuc}");
+                if (item.Object != null)
+                {
+                    item.Object.Id = item.Key; // Gán key Firebase vào thuộc tính Id
+                    dict[item.Key] = item.Object;
+                }
             }
+            return dict;
+        }
 
+        // Thêm bàn mới
+        public async Task ThemBanAsync(BanModel ban)
+        {
+            // Sinh mã theo quy tắc: Ban + số thứ tự lấy từ tên bàn
+            string maBan = TaoMaBanTuTen(ban.TenBan);
+            await firebase
+                .Child("Ban")
+                .Child(maBan)
+                .PutAsync(new BanModel { TenBan = ban.TenBan, KhuVuc = ban.KhuVuc });
+        }
 
-            return banList.ToDictionary(b => b.Key, b => b.Object);
+        // Hàm sinh mã bàn từ tên bàn
+        private string TaoMaBanTuTen(string tenBan)
+        {
+            // Tìm số trong tên bàn
+            var so = new string(tenBan.Where(char.IsDigit).ToArray());
+            if (string.IsNullOrEmpty(so)) so = "00";
+            if (so.Length == 1) so = "0" + so;
+            return $"Ban{so}";
+        }
+
+        // Sửa thông tin bàn (theo Id)
+        public async Task<bool> CapNhatBanAsync(BanModel ban)
+        {
+            // Sử dụng lại hàm sinh mã từ tên bàn
+            string maBan = TaoMaBanTuTen(ban.TenBan);
+            try
+            {
+                await firebase
+                    .Child("Ban")
+                    .Child(maBan)
+                    .PutAsync(new BanModel { TenBan = ban.TenBan, KhuVuc = ban.KhuVuc });
+                return true;
+            }
+            catch { return false; }
+        }
+
+        // Xoá bàn theo Id
+        public async Task<bool> XoaBanAsync(string tenBan)
+        {
+            string maBan = TaoMaBanTuTen(tenBan);
+            try
+            {
+                await firebase
+                    .Child("Ban")
+                    .Child(maBan)
+                    .DeleteAsync();
+                return true;
+            }
+            catch { return false; }
         }
         public async Task<List<MonAnModel>> LayTatCaMonAsync()
         {
@@ -73,29 +127,29 @@ namespace CoffeeManagement_ver2
             {
                 // Debug: In ra mã đơn để kiểm tra
                 Console.WriteLine($"Đang tìm đơn hàng với MaDon: {maDon}");
-                
+
                 // Tìm đơn hàng theo MaDon trong các record
                 var allRecords = await firebase
                     .Child("DonHang")
                     .OnceAsync<DonHangModel>();
-                
+
                 var targetRecord = allRecords.FirstOrDefault(r => r.Object.MaDon == maDon);
-                
+
                 if (targetRecord == null)
                 {
                     throw new Exception($"Không tìm thấy đơn hàng với mã: {maDon}");
                 }
-                
+
                 string firebaseKey = targetRecord.Key;
                 Console.WriteLine($"Tìm thấy đơn hàng với Firebase key: {firebaseKey}");
-                
+
                 // Cập nhật trạng thái sử dụng Firebase key
                 await firebase
                     .Child("DonHang")
                     .Child(firebaseKey)
                     .Child("TrangThai")
                     .PutAsync($"\"{trangThaiMoi}\"");
-                    
+
                 Console.WriteLine($"Đã cập nhật thành công trạng thái: {trangThaiMoi}");
             }
             catch (Exception ex)
@@ -113,9 +167,9 @@ namespace CoffeeManagement_ver2
                 var allRecords = await firebase
                     .Child("DonHang")
                     .OnceAsync<DonHangModel>();
-                
+
                 var targetRecord = allRecords.FirstOrDefault(r => r.Object?.MaDon == maDon);
-                
+
                 return targetRecord != null;
             }
             catch
@@ -169,7 +223,7 @@ namespace CoffeeManagement_ver2
                     result.Add(donHang);
                 }
             }
-            
+
             return result;
         }
 
@@ -182,22 +236,22 @@ namespace CoffeeManagement_ver2
                 var allRecords = await firebase
                     .Child("DonHang")
                     .OnceAsync<DonHangModel>();
-                
+
                 var targetRecord = allRecords.FirstOrDefault(r => r.Object?.MaDon == maDon);
-                
+
                 if (targetRecord == null)
                 {
                     return false; // Không tìm thấy đơn hàng
                 }
-                
+
                 string firebaseKey = targetRecord.Key;
-                
+
                 // Xóa đơn hàng sử dụng Firebase key
                 await firebase
                     .Child("DonHang")
                     .Child(firebaseKey)
                     .DeleteAsync();
-                    
+
                 return true;
             }
             catch
