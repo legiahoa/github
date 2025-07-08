@@ -172,5 +172,54 @@ namespace CoffeeManagement_ver2
             
             return result;
         }
+
+        // Method để xóa đơn hàng theo mã đơn
+        public async Task<bool> XoaDonHang(string maDon)
+        {
+            try
+            {
+                // Tìm đơn hàng theo MaDon trong các record
+                var allRecords = await firebase
+                    .Child("DonHang")
+                    .OnceAsync<DonHangModel>();
+                
+                var targetRecord = allRecords.FirstOrDefault(r => r.Object?.MaDon == maDon);
+                
+                if (targetRecord == null)
+                {
+                    return false; // Không tìm thấy đơn hàng
+                }
+                
+                string firebaseKey = targetRecord.Key;
+                
+                // Xóa đơn hàng sử dụng Firebase key
+                await firebase
+                    .Child("DonHang")
+                    .Child(firebaseKey)
+                    .DeleteAsync();
+                    
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        // Method để xóa tất cả đơn hàng
+        public async Task<bool> XoaTatCaDonHang()
+        {
+            try
+            {
+                await firebase
+                    .Child("DonHang")
+                    .DeleteAsync();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

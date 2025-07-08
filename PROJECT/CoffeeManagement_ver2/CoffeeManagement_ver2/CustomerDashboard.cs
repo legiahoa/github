@@ -280,6 +280,7 @@ namespace CoffeeManagement_ver2
                 ThoiGian = DateTime.Now.ToString("dd/MM/yyyy HH:mm"),
                 TongTien = tongTien,
                 DanhSachMon = new List<DonHangItemModel>(donHangTam),
+                TrangThai = "Chờ xử lý", // Thiết lập trạng thái ban đầu rõ ràng
                 // Thêm thông tin khách hàng từ user hiện tại
                 TenKhachHang = currentUser?.HoTen ?? "Khách vãng lai",
                 SoDienThoai = currentUser?.SoDienThoai ?? "",
