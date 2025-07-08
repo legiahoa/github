@@ -24,7 +24,6 @@ namespace CoffeeManagement_ver2
             dgvBan.SelectionChanged += dgvBan_SelectionChanged;
             btnThemBan.Click += btnThemBan_Click;
             btnSuaBan.Click += btnSuaBan_Click;
-            btnXoaBan.Click += btnXoaBan_Click;
         }
 
         private async void Ban_Load(object sender, EventArgs e)

@@ -16,7 +16,7 @@ namespace CoffeeManagement_ver2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Ban());
+            Application.Run(new LoginForm());
         }
     }
 }
