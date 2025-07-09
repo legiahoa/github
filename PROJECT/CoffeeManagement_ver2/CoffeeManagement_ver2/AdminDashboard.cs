@@ -52,5 +52,12 @@ namespace CoffeeManagement_ver2
                 loginForm.Show();
             }
         }
+
+        private void btnBaoCao_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            BaoCaoDoanhThu baoCaoForm = new BaoCaoDoanhThu();
+            baoCaoForm.Show();
+        }
     }
 }

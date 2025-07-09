@@ -1,0 +1,28 @@
+﻿========================================
+       BÁO CÁO DOANH THU NĂM 2025
+       COFFEE MANAGEMENT SYSTEM
+========================================
+
+Ngày tạo báo cáo: 10/07/2025 01:10
+
+TỔNG QUAN:
+- Tổng doanh thu: 744,000 VNĐ
+- Số đơn hàng: 9
+- Doanh thu trung bình: 82,666 VNĐ
+
+TOP MÓN ĂN BÁN CHẠY:
+========================================
+STT | Tên món          | SL bán | Doanh thu    | % Tổng DT
+----+-------------------+--------+--------------+----------
+  1 | Panna cotta       |     10 |      230,000 |    30.9%
+  2 | Sinh tố xoài      |      6 |      150,000 |    20.2%
+  3 | Cà phê sữa        |      5 |      125,000 |    16.8%
+  4 | Hồng trà          |      3 |       99,000 |    13.3%
+  5 | Matcha Latte      |      2 |       66,000 |     8.9%
+  6 | Tart              |      2 |       30,000 |     4.0%
+  7 | Soda 3 tầng       |      1 |       22,000 |     3.0%
+  8 | Cà phê đen        |      1 |       22,000 |     3.0%
+========================================
+
+Báo cáo được tạo tự động bởi Coffee Management System
+© 2025 Coffee Management. All rights reserved.

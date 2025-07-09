@@ -33,6 +33,7 @@
             this.btnDonhang = new Guna.UI2.WinForms.Guna2Button();
             this.btnThucdon = new Guna.UI2.WinForms.Guna2Button();
             this.btnBan = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBaoCao = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -110,12 +111,29 @@
             this.btnBan.FillColor = System.Drawing.Color.LimeGreen;
             this.btnBan.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnBan.ForeColor = System.Drawing.Color.White;
-            this.btnBan.Location = new System.Drawing.Point(340, 652);
+            this.btnBan.Location = new System.Drawing.Point(340, 633);
             this.btnBan.Name = "btnBan";
             this.btnBan.Size = new System.Drawing.Size(455, 152);
             this.btnBan.TabIndex = 13;
             this.btnBan.Text = "Bàn";
             this.btnBan.Click += new System.EventHandler(this.btnBan_Click);
+            // 
+            // btnBaoCao
+            // 
+            this.btnBaoCao.BorderRadius = 35;
+            this.btnBaoCao.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBaoCao.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBaoCao.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBaoCao.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBaoCao.FillColor = System.Drawing.Color.BlueViolet;
+            this.btnBaoCao.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnBaoCao.ForeColor = System.Drawing.Color.White;
+            this.btnBaoCao.Location = new System.Drawing.Point(340, 821);
+            this.btnBaoCao.Name = "btnBaoCao";
+            this.btnBaoCao.Size = new System.Drawing.Size(455, 152);
+            this.btnBaoCao.TabIndex = 14;
+            this.btnBaoCao.Text = "Báo cáo";
+            this.btnBaoCao.Click += new System.EventHandler(this.btnBaoCao_Click);
             // 
             // pictureBox1
             // 
@@ -133,7 +151,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RosyBrown;
-            this.ClientSize = new System.Drawing.Size(1146, 872);
+            this.ClientSize = new System.Drawing.Size(1146, 1035);
+            this.Controls.Add(this.btnBaoCao);
             this.Controls.Add(this.btnBan);
             this.Controls.Add(this.btnThucdon);
             this.Controls.Add(this.btnDonhang);
@@ -155,5 +174,6 @@
         private Guna.UI2.WinForms.Guna2Button btnDonhang;
         private Guna.UI2.WinForms.Guna2Button btnThucdon;
         private Guna.UI2.WinForms.Guna2Button btnBan;
+        private Guna.UI2.WinForms.Guna2Button btnBaoCao;
     }
 }

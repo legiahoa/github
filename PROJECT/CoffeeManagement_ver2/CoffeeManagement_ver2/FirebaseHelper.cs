@@ -275,5 +275,118 @@ namespace CoffeeManagement_ver2
                 return false;
             }
         }
+
+        // ===== METHODS CHO BÁO CÁO DOANH THU =====
+        
+        // Lấy báo cáo doanh thu theo ngày
+        public async Task<BaoCaoDoanhThuModel> LayBaoCaoDoanhThuTheoNgay(DateTime ngay)
+        {
+            var donList = await LayTatCaDonHangAsync();
+            
+            // Debug: In ra tất cả đơn hàng
+            System.Diagnostics.Debug.WriteLine($"=== DEBUG: Tổng số đơn hàng: {donList.Count} ===");
+            foreach (var don in donList)
+            {
+                System.Diagnostics.Debug.WriteLine($"Đơn {don.MaDon}: Thời gian = {don.ThoiGian}, Trạng thái = {don.TrangThai}");
+            }
+            
+            var donHangNgay = donList.Where(d => 
+            {
+                bool parseSuccess = DateTime.TryParse(d.ThoiGian, out DateTime thoiGian);
+                bool sameDayCheck = parseSuccess && thoiGian.Date == ngay.Date;
+                // Thay vì chỉ lọc "Hoàn thành", chúng ta lấy tất cả trạng thái trừ "Hủy"
+                bool validStatus = !string.IsNullOrEmpty(d.TrangThai) && d.TrangThai != "Hủy";
+                
+                System.Diagnostics.Debug.WriteLine($"Đơn {d.MaDon}: Parse = {parseSuccess}, SameDay = {sameDayCheck}, ValidStatus = {validStatus}");
+                
+                return sameDayCheck && validStatus;
+            }).ToList();
+
+            System.Diagnostics.Debug.WriteLine($"=== Số đơn hàng phù hợp: {donHangNgay.Count} ===");
+            
+            return TinhToanBaoCao(donHangNgay, ngay);
+        }
+
+        // Lấy báo cáo doanh thu theo tháng
+        public async Task<BaoCaoDoanhThuModel> LayBaoCaoDoanhThuTheoThang(int thang, int nam)
+        {
+            var donList = await LayTatCaDonHangAsync();
+            var donHangThang = donList.Where(d => 
+                DateTime.TryParse(d.ThoiGian, out DateTime thoiGian) && 
+                thoiGian.Month == thang && 
+                thoiGian.Year == nam &&
+                (!string.IsNullOrEmpty(d.TrangThai) && d.TrangThai != "Hủy")).ToList();
+
+            var ngayDauTien = new DateTime(nam, thang, 1);
+            var baoCao = TinhToanBaoCao(donHangThang, ngayDauTien);
+            baoCao.ThangBaoCao = thang;
+            baoCao.NamBaoCao = nam;
+            return baoCao;
+        }
+
+        // Lấy báo cáo doanh thu theo năm
+        public async Task<BaoCaoDoanhThuModel> LayBaoCaoDoanhThuTheoNam(int nam)
+        {
+            var donList = await LayTatCaDonHangAsync();
+            var donHangNam = donList.Where(d => 
+                DateTime.TryParse(d.ThoiGian, out DateTime thoiGian) && 
+                thoiGian.Year == nam &&
+                (!string.IsNullOrEmpty(d.TrangThai) && d.TrangThai != "Hủy")).ToList();
+
+            var ngayDauTien = new DateTime(nam, 1, 1);
+            var baoCao = TinhToanBaoCao(donHangNam, ngayDauTien);
+            baoCao.NamBaoCao = nam;
+            return baoCao;
+        }
+
+        // Tính toán báo cáo từ danh sách đơn hàng
+        private BaoCaoDoanhThuModel TinhToanBaoCao(List<DonHangModel> danhSachDonHang, DateTime ngayBaoCao)
+        {
+            var tongDoanhThu = danhSachDonHang.Sum(d => d.TongTien);
+            var soDonHang = danhSachDonHang.Count;
+            var doanhThuTrungBinh = soDonHang > 0 ? tongDoanhThu / soDonHang : 0;
+
+            // Tính toán top món ăn
+            var tatCaMonAn = new Dictionary<string, TopMonAnModel>();
+            foreach (var donHang in danhSachDonHang)
+            {
+                if (donHang.DanhSachMon != null)
+                {
+                    foreach (var mon in donHang.DanhSachMon)
+                    {
+                        if (tatCaMonAn.ContainsKey(mon.TenMon))
+                        {
+                            tatCaMonAn[mon.TenMon].SoLuongBan += mon.SoLuong;
+                            tatCaMonAn[mon.TenMon].DoanhThu += mon.ThanhTien;
+                        }
+                        else
+                        {
+                            tatCaMonAn[mon.TenMon] = new TopMonAnModel
+                            {
+                                TenMon = mon.TenMon,
+                                SoLuongBan = mon.SoLuong,
+                                DoanhThu = mon.ThanhTien
+                            };
+                        }
+                    }
+                }
+            }
+
+            // Tính phần trăm và sắp xếp
+            var topMonAn = tatCaMonAn.Values.OrderByDescending(m => m.DoanhThu).ToList();
+            foreach (var mon in topMonAn)
+            {
+                mon.PhanTramDoanhThu = tongDoanhThu > 0 ? (double)mon.DoanhThu / tongDoanhThu * 100 : 0;
+            }
+
+            return new BaoCaoDoanhThuModel
+            {
+                NgayBaoCao = ngayBaoCao,
+                TongDoanhThu = tongDoanhThu,
+                SoDonHang = soDonHang,
+                DoanhThuTrungBinh = doanhThuTrungBinh,
+                TopMonAn = topMonAn
+            };
+        }
     }
 }
