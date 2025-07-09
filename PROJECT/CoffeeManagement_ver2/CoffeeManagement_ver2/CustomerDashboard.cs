@@ -144,8 +144,8 @@ namespace CoffeeManagement_ver2
             if (result == DialogResult.Yes)
             {
                 this.Hide();
-                /*LoginForm login = new LoginForm();
-                login.Show();*/
+                LoginForm login = new LoginForm();
+                login.Show();
                 this.Close();
             }
         }

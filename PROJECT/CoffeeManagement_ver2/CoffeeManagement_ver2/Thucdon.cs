@@ -20,6 +20,8 @@ namespace CoffeeManagement_ver2
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+            AdminDashboard dashboard = new AdminDashboard();
+            dashboard.Show();
         }
 
         private void btnXoaMon_Click(object sender, EventArgs e)

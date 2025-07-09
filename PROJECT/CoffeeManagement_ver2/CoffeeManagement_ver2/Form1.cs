@@ -83,6 +83,7 @@ namespace CoffeeManagement_ver2
             if (MessageBox.Show("Bạn có muốn thoát chương trình?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
             {
                 e.Cancel = true;
+                this.Close();
             }
         }
     }

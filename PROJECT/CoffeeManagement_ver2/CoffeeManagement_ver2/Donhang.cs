@@ -44,6 +44,8 @@ namespace CoffeeManagement_ver2
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+            AdminDashboard adminDashboard = new AdminDashboard();   
+            adminDashboard.Show();
         }
 
         protected override void OnFormClosed(FormClosedEventArgs e)
