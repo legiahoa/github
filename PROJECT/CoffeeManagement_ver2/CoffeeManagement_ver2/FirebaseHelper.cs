@@ -30,6 +30,9 @@ namespace CoffeeManagement_ver2
 
             return null; // Sai tài khoản
         }
+
+    //Quản lý bàn
+
         // Lấy tất cả bàn, gán Id là key Firebase
 
         public async Task<Dictionary<string, BanModel>> LayTatCaBanAsync()
@@ -101,14 +104,104 @@ namespace CoffeeManagement_ver2
             }
             catch { return false; }
         }
+
+    //Quản lý thực đơn
+
         public async Task<List<MonAnModel>> LayTatCaMonAsync()
         {
             var monList = await firebase
                 .Child("MonAn")
                 .OnceAsync<MonAnModel>();
 
-            return monList.Select(m => m.Object).ToList();
+            // Sắp xếp theo danh mục (LoaiMon), sau đó theo tên món
+            return monList
+                .Select(m => m.Object)
+                .Where(m => m != null)
+                .OrderBy(m => m.LoaiMon)
+                .ThenBy(m => m.TenMon)
+                .ToList();
         }
+
+        // Thêm món ăn mới vào thực đơn
+        public async Task ThemMonAnAsync(MonAnModel monAn)
+        {
+            // Lấy tất cả các key hiện tại
+            var allMon = await firebase
+                .Child("MonAn")
+                .OnceAsync<MonAnModel>();
+
+            // Tìm số lớn nhất trong các key dạng "Mon<number>"
+            int maxNum = 0;
+            foreach (var item in allMon)
+            {
+                if (item.Key.StartsWith("Mon"))
+                {
+                    var numStr = item.Key.Substring(3);
+                    if (int.TryParse(numStr, out int num))
+                    {
+                        if (num > maxNum) maxNum = num;
+                    }
+                }
+            }
+            string newKey = $"Mon{maxNum + 1}";
+            await firebase
+                .Child("MonAn")
+                .Child(newKey)
+                .PutAsync(monAn);
+        }
+
+        // Cập nhật thông tin món ăn dựa trên tên món (hoặc key)
+        public async Task<bool> CapNhatMonAnAsync(string tenMon, MonAnModel monAnMoi)
+        {
+            // Tìm món ăn theo tên
+            var allMon = await firebase
+                .Child("MonAn")
+                .OnceAsync<MonAnModel>();
+
+            var target = allMon.FirstOrDefault(m => m.Object.TenMon == tenMon);
+            if (target == null)
+                return false;
+
+            await firebase
+                .Child("MonAn")
+                .Child(target.Key)
+                .PutAsync(monAnMoi);
+            return true;
+        }
+
+        // Xoá món ăn dựa trên tên món (hoặc key)
+        public async Task<bool> XoaMonAnAsync(string tenMon)
+        {
+            var allMon = await firebase
+                .Child("MonAn")
+                .OnceAsync<MonAnModel>();
+
+            var target = allMon.FirstOrDefault(m => m.Object.TenMon == tenMon);
+            if (target == null)
+                return false;
+
+            await firebase
+                .Child("MonAn")
+                .Child(target.Key)
+                .DeleteAsync();
+            return true;
+        }
+
+        // Tìm kiếm món ăn theo tên (có thể trả về nhiều kết quả gần đúng)
+        public async Task<List<MonAnModel>> TimKiemMonAnTheoTenAsync(string tuKhoa)
+        {
+            var allMon = await firebase
+                .Child("MonAn")
+                .OnceAsync<MonAnModel>();
+
+            return allMon
+                .Where(m => m.Object.TenMon != null && m.Object.TenMon.ToLower().Contains(tuKhoa.ToLower()))
+                .Select(m => m.Object)
+                .ToList();
+        }
+
+    //Quản lý đơn hàng
+
         public async Task ThemDonHangVaoFirebase(DonHangModel donHang)
         {
             await firebase

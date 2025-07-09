@@ -177,3 +177,5 @@ C:\Users\LENOVO\Documents\github3\PROJECT\CoffeeManagement_ver2\CoffeeManagement
 C:\Users\LENOVO\Documents\github3\PROJECT\CoffeeManagement_ver2\CoffeeManagement_ver2\obj\Debug\CoffeeMa.64F03F8D.Up2Date
 C:\Users\LENOVO\Documents\github3\PROJECT\CoffeeManagement_ver2\CoffeeManagement_ver2\obj\Debug\CoffeeManagement_ver2.exe
 C:\Users\LENOVO\Documents\github3\PROJECT\CoffeeManagement_ver2\CoffeeManagement_ver2\obj\Debug\CoffeeManagement_ver2.pdb
+D:\FileCode\github\PROJECT\CoffeeManagement_ver2\CoffeeManagement_ver2\obj\Debug\CoffeeManagement_ver2.BaoCaoDoanhThu.resources
+D:\FileCode\github\PROJECT\CoffeeManagement_ver2\CoffeeManagement_ver2\obj\Debug\CoffeeManagement_ver2.EmailForm.resources
