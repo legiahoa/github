@@ -385,7 +385,12 @@ namespace CoffeeManagement_ver2
             
             var donHangNgay = donList.Where(d => 
             {
-                bool parseSuccess = DateTime.TryParse(d.ThoiGian, out DateTime thoiGian);
+                // Sử dụng TryParseExact để parse chính xác định dạng "dd/MM/yyyy HH:mm"
+                bool parseSuccess = DateTime.TryParseExact(d.ThoiGian, "dd/MM/yyyy HH:mm", 
+                    System.Globalization.CultureInfo.InvariantCulture, 
+                    System.Globalization.DateTimeStyles.None, 
+                    out DateTime thoiGian);
+                
                 bool sameDayCheck = parseSuccess && thoiGian.Date == ngay.Date;
                 // Thay vì chỉ lọc "Hoàn thành", chúng ta lấy tất cả trạng thái trừ "Hủy"
                 bool validStatus = !string.IsNullOrEmpty(d.TrangThai) && d.TrangThai != "Hủy";
@@ -405,10 +410,18 @@ namespace CoffeeManagement_ver2
         {
             var donList = await LayTatCaDonHangAsync();
             var donHangThang = donList.Where(d => 
-                DateTime.TryParse(d.ThoiGian, out DateTime thoiGian) && 
-                thoiGian.Month == thang && 
-                thoiGian.Year == nam &&
-                (!string.IsNullOrEmpty(d.TrangThai) && d.TrangThai != "Hủy")).ToList();
+            {
+                // Sử dụng TryParseExact để parse chính xác định dạng "dd/MM/yyyy HH:mm"
+                bool parseSuccess = DateTime.TryParseExact(d.ThoiGian, "dd/MM/yyyy HH:mm", 
+                    System.Globalization.CultureInfo.InvariantCulture, 
+                    System.Globalization.DateTimeStyles.None, 
+                    out DateTime thoiGian);
+                
+                bool matchMonth = parseSuccess && thoiGian.Month == thang && thoiGian.Year == nam;
+                bool validStatus = !string.IsNullOrEmpty(d.TrangThai) && d.TrangThai != "Hủy";
+                
+                return matchMonth && validStatus;
+            }).ToList();
 
             var ngayDauTien = new DateTime(nam, thang, 1);
             var baoCao = TinhToanBaoCao(donHangThang, ngayDauTien);
@@ -422,9 +435,18 @@ namespace CoffeeManagement_ver2
         {
             var donList = await LayTatCaDonHangAsync();
             var donHangNam = donList.Where(d => 
-                DateTime.TryParse(d.ThoiGian, out DateTime thoiGian) && 
-                thoiGian.Year == nam &&
-                (!string.IsNullOrEmpty(d.TrangThai) && d.TrangThai != "Hủy")).ToList();
+            {
+                // Sử dụng TryParseExact để parse chính xác định dạng "dd/MM/yyyy HH:mm"
+                bool parseSuccess = DateTime.TryParseExact(d.ThoiGian, "dd/MM/yyyy HH:mm", 
+                    System.Globalization.CultureInfo.InvariantCulture, 
+                    System.Globalization.DateTimeStyles.None, 
+                    out DateTime thoiGian);
+                
+                bool matchYear = parseSuccess && thoiGian.Year == nam;
+                bool validStatus = !string.IsNullOrEmpty(d.TrangThai) && d.TrangThai != "Hủy";
+                
+                return matchYear && validStatus;
+            }).ToList();
 
             var ngayDauTien = new DateTime(nam, 1, 1);
             var baoCao = TinhToanBaoCao(donHangNam, ngayDauTien);
@@ -443,23 +465,26 @@ namespace CoffeeManagement_ver2
             var tatCaMonAn = new Dictionary<string, TopMonAnModel>();
             foreach (var donHang in danhSachDonHang)
             {
-                if (donHang.DanhSachMon != null)
+                if (donHang.DanhSachMon != null && donHang.DanhSachMon.Count > 0)
                 {
                     foreach (var mon in donHang.DanhSachMon)
                     {
-                        if (tatCaMonAn.ContainsKey(mon.TenMon))
+                        if (!string.IsNullOrEmpty(mon.TenMon))
                         {
-                            tatCaMonAn[mon.TenMon].SoLuongBan += mon.SoLuong;
-                            tatCaMonAn[mon.TenMon].DoanhThu += mon.ThanhTien;
-                        }
-                        else
-                        {
-                            tatCaMonAn[mon.TenMon] = new TopMonAnModel
+                            if (tatCaMonAn.ContainsKey(mon.TenMon))
                             {
-                                TenMon = mon.TenMon,
-                                SoLuongBan = mon.SoLuong,
-                                DoanhThu = mon.ThanhTien
-                            };
+                                tatCaMonAn[mon.TenMon].SoLuongBan += mon.SoLuong;
+                                tatCaMonAn[mon.TenMon].DoanhThu += mon.ThanhTien;
+                            }
+                            else
+                            {
+                                tatCaMonAn[mon.TenMon] = new TopMonAnModel
+                                {
+                                    TenMon = mon.TenMon,
+                                    SoLuongBan = mon.SoLuong,
+                                    DoanhThu = mon.ThanhTien
+                                };
+                            }
                         }
                     }
                 }
@@ -472,13 +497,20 @@ namespace CoffeeManagement_ver2
                 mon.PhanTramDoanhThu = tongDoanhThu > 0 ? (double)mon.DoanhThu / tongDoanhThu * 100 : 0;
             }
 
+            // Debug logging
+            System.Diagnostics.Debug.WriteLine($"=== TÍNH TOÁN BÁO CÁO ===");
+            System.Diagnostics.Debug.WriteLine($"Tổng doanh thu: {tongDoanhThu:N0} VNĐ");
+            System.Diagnostics.Debug.WriteLine($"Số đơn hàng: {soDonHang}");
+            System.Diagnostics.Debug.WriteLine($"Số loại món: {topMonAn.Count}");
+
             return new BaoCaoDoanhThuModel
             {
                 NgayBaoCao = ngayBaoCao,
                 TongDoanhThu = tongDoanhThu,
                 SoDonHang = soDonHang,
                 DoanhThuTrungBinh = doanhThuTrungBinh,
-                TopMonAn = topMonAn
+                TopMonAn = topMonAn ?? new List<TopMonAnModel>(),
+                ChiTietDonHang = danhSachDonHang // Thêm chi tiết đơn hàng vào báo cáo
             };
         }
     }

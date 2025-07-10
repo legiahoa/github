@@ -15,6 +15,7 @@ namespace CoffeeManagement_ver2
         public int SoDonHang { get; set; }
         public int DoanhThuTrungBinh { get; set; }
         public List<TopMonAnModel> TopMonAn { get; set; }
+        public List<DonHangModel> ChiTietDonHang { get; set; } // Thêm danh sách chi tiết đơn hàng
     }
 
     public class TopMonAnModel

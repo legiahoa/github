@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\",
   "Documents": [
     {
@@ -124,6 +125,136 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+  "WorkspaceRootPath": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|c:\\users\\lenovo\\documents\\github\\project\\coffeemanagement_ver2\\coffeemanagement_ver2\\emailform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:coffeemanagement_ver2\\emailform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\coffeemanagement_ver2\\baocaodoanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:coffeemanagement_ver2\\baocaodoanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|c:\\users\\lenovo\\documents\\github\\project\\coffeemanagement_ver2\\coffeemanagement_ver2\\baocaodoanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:coffeemanagement_ver2\\baocaodoanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\coffeemanagement_ver2\\baocaodoanhthu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:coffeemanagement_ver2\\baocaodoanhthu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:CoffeeManagement_ver2\\Donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Ban.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:CoffeeManagement_ver2\\Ban.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\coffeemanagement_ver2\\ban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:coffeemanagement_ver2\\ban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\BanModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:CoffeeManagement_ver2\\BanModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\AdminDashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:CoffeeManagement_ver2\\AdminDashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\coffeemanagement_ver2\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:coffeemanagement_ver2\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\coffeemanagement_ver2\\ban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:coffeemanagement_ver2\\ban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:CoffeeManagement_ver2\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Donhang.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:CoffeeManagement_ver2\\Donhang.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\CustomerDashboard.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:CoffeeManagement_ver2\\CustomerDashboard.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\FirebaseHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:CoffeeManagement_ver2\\FirebaseHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\DonHangModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:CoffeeManagement_ver2\\DonHangModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\DonHangItemModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:CoffeeManagement_ver2\\DonHangItemModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\coffeemanagement_ver2\\customerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:coffeemanagement_ver2\\customerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\CustomerDashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:CoffeeManagement_ver2\\CustomerDashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\MonAnModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:CoffeeManagement_ver2\\MonAnModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Dangkinhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:CoffeeManagement_ver2\\Dangkinhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\TaiKhoanModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:CoffeeManagement_ver2\\TaiKhoanModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Thucdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:CoffeeManagement_ver2\\Thucdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Thucdon.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:CoffeeManagement_ver2\\Thucdon.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\coffeemanagement_ver2\\thucdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:coffeemanagement_ver2\\thucdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\coffeemanagement_ver2\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:coffeemanagement_ver2\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\coffeemanagement_ver2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:coffeemanagement_ver2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Form1.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:CoffeeManagement_ver2\\Form1.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\coffeemanagement_ver2\\dangkinhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:coffeemanagement_ver2\\dangkinhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Dangkikhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:CoffeeManagement_ver2\\Dangkikhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\coffeemanagement_ver2\\dangkikhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:coffeemanagement_ver2\\dangkikhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> 57fbe3e (Fix bug)
       "RelativeMoniker": "D:0:0:{B63AA1FE-BF59-4924-86B3-B3869BBFF8B1}|CoffeeManagement_ver2\\CoffeeManagement_ver2.csproj|solutionrelative:CoffeeManagement_ver2\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -134,7 +265,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 4,
+=======
+          "SelectedChildIndex": 0,
+>>>>>>> 57fbe3e (Fix bug)
           "Children": [
             {
               "$type": "Bookmark",
@@ -142,6 +277,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 6,
               "Title": "BaoCaoDoanhThu.cs",
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\BaoCaoDoanhThu.cs",
@@ -149,17 +285,46 @@
               "ToolTip": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\BaoCaoDoanhThu.cs",
               "RelativeToolTip": "CoffeeManagement_ver2\\BaoCaoDoanhThu.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAowBwAAAAMAAAAAAAAAA==",
+=======
+              "DocumentIndex": 0,
+              "Title": "EmailForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\EmailForm.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\EmailForm.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\EmailForm.cs [Design]",
+              "RelativeToolTip": "CoffeeManagement_ver2\\EmailForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T09:54:26.715Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaoCaoDoanhThu.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\BaoCaoDoanhThu.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\BaoCaoDoanhThu.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\BaoCaoDoanhThu.cs",
+              "RelativeToolTip": "CoffeeManagement_ver2\\BaoCaoDoanhThu.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAMwGsAAAAMAAAAAAAAAA==",
+>>>>>>> 57fbe3e (Fix bug)
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-09T18:02:09.595Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 7,
               "Title": "BaoCaoDoanhThu.Designer.cs",
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\BaoCaoDoanhThu.Designer.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\BaoCaoDoanhThu.Designer.cs",
               "ToolTip": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\BaoCaoDoanhThu.Designer.cs",
+=======
+              "DocumentIndex": 3,
+              "Title": "BaoCaoDoanhThu.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\BaoCaoDoanhThu.Designer.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\BaoCaoDoanhThu.Designer.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\BaoCaoDoanhThu.Designer.cs",
+>>>>>>> 57fbe3e (Fix bug)
               "RelativeToolTip": "CoffeeManagement_ver2\\BaoCaoDoanhThu.Designer.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAwwDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -168,11 +333,19 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 5,
               "Title": "BaoCaoDoanhThu.cs [Design]",
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\BaoCaoDoanhThu.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\BaoCaoDoanhThu.cs",
               "ToolTip": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\BaoCaoDoanhThu.cs [Design]",
+=======
+              "DocumentIndex": 1,
+              "Title": "BaoCaoDoanhThu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\BaoCaoDoanhThu.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\BaoCaoDoanhThu.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\BaoCaoDoanhThu.cs [Design]",
+>>>>>>> 57fbe3e (Fix bug)
               "RelativeToolTip": "CoffeeManagement_ver2\\BaoCaoDoanhThu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-09T17:56:43.03Z",
@@ -180,11 +353,19 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Program.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Program.cs",
               "ToolTip": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Program.cs",
+=======
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Program.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Program.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Program.cs",
+>>>>>>> 57fbe3e (Fix bug)
               "RelativeToolTip": "CoffeeManagement_ver2\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -193,11 +374,19 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 15,
               "Title": "Donhang.Designer.cs",
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Donhang.Designer.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Donhang.Designer.cs",
               "ToolTip": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Donhang.Designer.cs",
+=======
+              "DocumentIndex": 12,
+              "Title": "Donhang.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Donhang.Designer.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Donhang.Designer.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Donhang.Designer.cs",
+>>>>>>> 57fbe3e (Fix bug)
               "RelativeToolTip": "CoffeeManagement_ver2\\Donhang.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -205,11 +394,19 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 8,
               "Title": "Donhang.cs",
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Donhang.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Donhang.cs",
               "ToolTip": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Donhang.cs",
+=======
+              "DocumentIndex": 4,
+              "Title": "Donhang.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Donhang.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Donhang.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Donhang.cs",
+>>>>>>> 57fbe3e (Fix bug)
               "RelativeToolTip": "CoffeeManagement_ver2\\Donhang.cs",
               "ViewState": "AgIAALgAAAAAAAAAAAArwC8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -217,11 +414,19 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 16,
               "Title": "CustomerDashboard.Designer.cs",
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\CustomerDashboard.Designer.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\CustomerDashboard.Designer.cs",
               "ToolTip": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\CustomerDashboard.Designer.cs",
+=======
+              "DocumentIndex": 13,
+              "Title": "CustomerDashboard.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\CustomerDashboard.Designer.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\CustomerDashboard.Designer.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\CustomerDashboard.Designer.cs",
+>>>>>>> 57fbe3e (Fix bug)
               "RelativeToolTip": "CoffeeManagement_ver2\\CustomerDashboard.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -229,11 +434,19 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 4,
               "Title": "FirebaseHelper.cs",
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\FirebaseHelper.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\FirebaseHelper.cs",
               "ToolTip": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\FirebaseHelper.cs",
+=======
+              "DocumentIndex": 14,
+              "Title": "FirebaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\FirebaseHelper.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\FirebaseHelper.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\FirebaseHelper.cs",
+>>>>>>> 57fbe3e (Fix bug)
               "RelativeToolTip": "CoffeeManagement_ver2\\FirebaseHelper.cs",
               "ViewState": "AgIAAIcAAAAAAAAAAAAAAHEAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -242,11 +455,19 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 12,
               "Title": "AdminDashboard.cs",
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\AdminDashboard.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\AdminDashboard.cs",
               "ToolTip": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\AdminDashboard.cs",
+=======
+              "DocumentIndex": 8,
+              "Title": "AdminDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\AdminDashboard.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\AdminDashboard.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\AdminDashboard.cs",
+>>>>>>> 57fbe3e (Fix bug)
               "RelativeToolTip": "CoffeeManagement_ver2\\AdminDashboard.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAowDoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -254,11 +475,19 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 17,
               "Title": "DonHangModel.cs",
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\DonHangModel.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\DonHangModel.cs",
               "ToolTip": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\DonHangModel.cs",
+=======
+              "DocumentIndex": 15,
+              "Title": "DonHangModel.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\DonHangModel.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\DonHangModel.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\DonHangModel.cs",
+>>>>>>> 57fbe3e (Fix bug)
               "RelativeToolTip": "CoffeeManagement_ver2\\DonHangModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -266,11 +495,19 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 18,
               "Title": "DonHangItemModel.cs",
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\DonHangItemModel.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\DonHangItemModel.cs",
               "ToolTip": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\DonHangItemModel.cs",
+=======
+              "DocumentIndex": 16,
+              "Title": "DonHangItemModel.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\DonHangItemModel.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\DonHangItemModel.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\DonHangItemModel.cs",
+>>>>>>> 57fbe3e (Fix bug)
               "RelativeToolTip": "CoffeeManagement_ver2\\DonHangItemModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -278,21 +515,38 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 19,
               "Title": "CustomerDashboard.cs [Design]",
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\CustomerDashboard.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\CustomerDashboard.cs",
               "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\CustomerDashboard.cs [Design]",
+=======
+              "DocumentIndex": 17,
+              "Title": "CustomerDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\CustomerDashboard.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\CustomerDashboard.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\CustomerDashboard.cs [Design]",
+              "RelativeToolTip": "CoffeeManagement_ver2\\CustomerDashboard.cs [Design]",
+>>>>>>> 57fbe3e (Fix bug)
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T11:42:15.648Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 20,
               "Title": "CustomerDashboard.cs",
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\CustomerDashboard.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\CustomerDashboard.cs",
               "ToolTip": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\CustomerDashboard.cs",
+=======
+              "DocumentIndex": 18,
+              "Title": "CustomerDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\CustomerDashboard.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\CustomerDashboard.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\CustomerDashboard.cs",
+>>>>>>> 57fbe3e (Fix bug)
               "RelativeToolTip": "CoffeeManagement_ver2\\CustomerDashboard.cs",
               "ViewState": "AgIAAHoAAAAAAAAAAIAwwJUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -300,11 +554,19 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 21,
               "Title": "MonAnModel.cs",
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\MonAnModel.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\MonAnModel.cs",
               "ToolTip": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\MonAnModel.cs",
+=======
+              "DocumentIndex": 19,
+              "Title": "MonAnModel.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\MonAnModel.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\MonAnModel.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\MonAnModel.cs",
+>>>>>>> 57fbe3e (Fix bug)
               "RelativeToolTip": "CoffeeManagement_ver2\\MonAnModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -312,11 +574,19 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 11,
               "Title": "BanModel.cs",
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\BanModel.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\BanModel.cs",
               "ToolTip": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\BanModel.cs",
+=======
+              "DocumentIndex": 7,
+              "Title": "BanModel.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\BanModel.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\BanModel.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\BanModel.cs",
+>>>>>>> 57fbe3e (Fix bug)
               "RelativeToolTip": "CoffeeManagement_ver2\\BanModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -324,11 +594,19 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 22,
               "Title": "Dangkinhanvien.cs",
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Dangkinhanvien.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Dangkinhanvien.cs",
               "ToolTip": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Dangkinhanvien.cs",
+=======
+              "DocumentIndex": 20,
+              "Title": "Dangkinhanvien.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Dangkinhanvien.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Dangkinhanvien.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Dangkinhanvien.cs",
+>>>>>>> 57fbe3e (Fix bug)
               "RelativeToolTip": "CoffeeManagement_ver2\\Dangkinhanvien.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAewB4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -336,11 +614,19 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 23,
               "Title": "TaiKhoanModel.cs",
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\TaiKhoanModel.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\TaiKhoanModel.cs",
               "ToolTip": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\TaiKhoanModel.cs",
+=======
+              "DocumentIndex": 21,
+              "Title": "TaiKhoanModel.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\TaiKhoanModel.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\TaiKhoanModel.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\TaiKhoanModel.cs",
+>>>>>>> 57fbe3e (Fix bug)
               "RelativeToolTip": "CoffeeManagement_ver2\\TaiKhoanModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -348,14 +634,23 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
               "Title": "Thucdon.cs",
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Thucdon.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Thucdon.cs",
               "ToolTip": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Thucdon.cs",
+=======
+              "DocumentIndex": 22,
+              "Title": "Thucdon.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Thucdon.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Thucdon.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Thucdon.cs",
+>>>>>>> 57fbe3e (Fix bug)
               "RelativeToolTip": "CoffeeManagement_ver2\\Thucdon.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAJkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2025-06-10T09:26:33.294Z",
               "EditorCaption": ""
             },
@@ -427,24 +722,109 @@
               "ToolTip": "C:\\Users\\LENOVO\\Documents\\github3\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Donhang.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T08:12:03.446Z"
+=======
+              "WhenOpened": "2025-06-10T09:26:33.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Thucdon.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Thucdon.Designer.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Thucdon.Designer.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Thucdon.Designer.cs",
+              "RelativeToolTip": "CoffeeManagement_ver2\\Thucdon.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T09:18:41.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Thucdon.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Thucdon.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Thucdon.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Thucdon.cs [Design]",
+              "RelativeToolTip": "CoffeeManagement_ver2\\Thucdon.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T08:33:01.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Ban.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Ban.Designer.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Ban.Designer.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Ban.Designer.cs",
+              "RelativeToolTip": "CoffeeManagement_ver2\\Ban.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T08:26:49.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Ban.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Ban.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Ban.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Ban.cs",
+              "RelativeToolTip": "CoffeeManagement_ver2\\Ban.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAawB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T08:25:55.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Ban.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Ban.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Ban.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github3\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Ban.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\github3\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Ban.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T08:12:10.43Z"
+>>>>>>> 57fbe3e (Fix bug)
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
+              "Title": "Donhang.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Donhang.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Donhang.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github3\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Donhang.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\github3\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Donhang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T08:12:03.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "Form1.cs [Design]",
+<<<<<<< HEAD
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Form1.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Form1.cs",
               "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Form1.cs [Design]",
+=======
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Form1.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Form1.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Form1.cs [Design]",
+              "RelativeToolTip": "CoffeeManagement_ver2\\Form1.cs [Design]",
+>>>>>>> 57fbe3e (Fix bug)
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T06:48:11.563Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Form1.Designer.cs",
+<<<<<<< HEAD
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Form1.Designer.cs",
               "ToolTip": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Form1.Designer.cs",
+=======
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Form1.Designer.cs",
+>>>>>>> 57fbe3e (Fix bug)
               "RelativeToolTip": "CoffeeManagement_ver2\\Form1.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -452,31 +832,53 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 13,
               "Title": "AdminDashboard.cs [Design]",
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\AdminDashboard.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\AdminDashboard.cs",
               "ToolTip": "C:\\Users\\LENOVO\\Documents\\github3\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\AdminDashboard.cs [Design]",
+=======
+              "DocumentIndex": 9,
+              "Title": "AdminDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\AdminDashboard.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\AdminDashboard.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github3\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\AdminDashboard.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\github3\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\AdminDashboard.cs [Design]",
+>>>>>>> 57fbe3e (Fix bug)
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T05:19:16.732Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Dangkinhanvien.cs [Design]",
+<<<<<<< HEAD
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Dangkinhanvien.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Dangkinhanvien.cs",
               "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Dangkinhanvien.cs [Design]",
+=======
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Dangkinhanvien.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Dangkinhanvien.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Dangkinhanvien.cs [Design]",
+              "RelativeToolTip": "CoffeeManagement_ver2\\Dangkinhanvien.cs [Design]",
+>>>>>>> 57fbe3e (Fix bug)
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T04:32:55.536Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "Dangkikhachhang.cs",
+<<<<<<< HEAD
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Dangkikhachhang.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Dangkikhachhang.cs",
               "ToolTip": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Dangkikhachhang.cs",
+=======
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Dangkikhachhang.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Dangkikhachhang.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Dangkikhachhang.cs",
+>>>>>>> 57fbe3e (Fix bug)
               "RelativeToolTip": "CoffeeManagement_ver2\\Dangkikhachhang.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAkwCMAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -484,21 +886,34 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "Dangkikhachhang.cs [Design]",
+<<<<<<< HEAD
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Dangkikhachhang.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Dangkikhachhang.cs",
               "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Dangkikhachhang.cs [Design]",
+=======
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Dangkikhachhang.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Dangkikhachhang.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Dangkikhachhang.cs [Design]",
+              "RelativeToolTip": "CoffeeManagement_ver2\\Dangkikhachhang.cs [Design]",
+>>>>>>> 57fbe3e (Fix bug)
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T03:47:44.786Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "Form1.cs",
+<<<<<<< HEAD
               "DocumentMoniker": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Form1.cs",
               "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Form1.cs",
               "ToolTip": "D:\\FileCode\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Form1.cs",
+=======
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Form1.cs",
+              "RelativeDocumentMoniker": "CoffeeManagement_ver2\\Form1.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\github\\PROJECT\\CoffeeManagement_ver2\\CoffeeManagement_ver2\\Form1.cs",
+>>>>>>> 57fbe3e (Fix bug)
               "RelativeToolTip": "CoffeeManagement_ver2\\Form1.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAqwD0AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

@@ -263,7 +263,7 @@ namespace CoffeeManagement_ver2
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox3.Size = new System.Drawing.Size(506, 154);
+            this.groupBox3.Size = new System.Drawing.Size(475, 154);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "📈 Báo cáo theo năm";
@@ -298,7 +298,7 @@ namespace CoffeeManagement_ver2
             this.btnXemBaoCaoNam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXemBaoCaoNam.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.btnXemBaoCaoNam.ForeColor = System.Drawing.Color.White;
-            this.btnXemBaoCaoNam.Location = new System.Drawing.Point(344, 33);
+            this.btnXemBaoCaoNam.Location = new System.Drawing.Point(326, 26);
             this.btnXemBaoCaoNam.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnXemBaoCaoNam.Name = "btnXemBaoCaoNam";
             this.btnXemBaoCaoNam.Size = new System.Drawing.Size(131, 79);
@@ -327,7 +327,7 @@ namespace CoffeeManagement_ver2
             this.panel2.Location = new System.Drawing.Point(30, 308);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1706, 122);
+            this.panel2.Size = new System.Drawing.Size(1675, 122);
             this.panel2.TabIndex = 4;
             // 
             // lblDoanhThuTrungBinh
@@ -377,7 +377,7 @@ namespace CoffeeManagement_ver2
             this.dataGridViewTopMon.Name = "dataGridViewTopMon";
             this.dataGridViewTopMon.ReadOnly = true;
             this.dataGridViewTopMon.RowHeadersWidth = 62;
-            this.dataGridViewTopMon.Size = new System.Drawing.Size(1706, 385);
+            this.dataGridViewTopMon.Size = new System.Drawing.Size(1675, 385);
             this.dataGridViewTopMon.TabIndex = 5;
             // 
             // label5
@@ -397,7 +397,7 @@ namespace CoffeeManagement_ver2
             this.btnGuiEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuiEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnGuiEmail.ForeColor = System.Drawing.Color.White;
-            this.btnGuiEmail.Location = new System.Drawing.Point(1320, 908);
+            this.btnGuiEmail.Location = new System.Drawing.Point(1270, 903);
             this.btnGuiEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnGuiEmail.Name = "btnGuiEmail";
             this.btnGuiEmail.Size = new System.Drawing.Size(195, 62);
@@ -412,7 +412,7 @@ namespace CoffeeManagement_ver2
             this.btnXuatFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXuatFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnXuatFile.ForeColor = System.Drawing.Color.White;
-            this.btnXuatFile.Location = new System.Drawing.Point(1560, 908);
+            this.btnXuatFile.Location = new System.Drawing.Point(1510, 903);
             this.btnXuatFile.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnXuatFile.Name = "btnXuatFile";
             this.btnXuatFile.Size = new System.Drawing.Size(195, 62);
