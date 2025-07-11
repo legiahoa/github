@@ -48,18 +48,19 @@ namespace CoffeeManagement_ver2
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(450, 60);
+            this.panel1.Size = new System.Drawing.Size(900, 115);
             this.panel1.TabIndex = 0;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(160, 20);
+            this.label1.Location = new System.Drawing.Point(320, 38);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 24);
+            this.label1.Size = new System.Drawing.Size(502, 85);
             this.label1.TabIndex = 0;
             this.label1.Text = "📧 Gửi Email";
             // 
@@ -67,55 +68,61 @@ namespace CoffeeManagement_ver2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(30, 80);
+            this.label2.Location = new System.Drawing.Point(60, 154);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 17);
+            this.label2.Size = new System.Drawing.Size(229, 31);
             this.label2.TabIndex = 1;
             this.label2.Text = "Email người nhận:";
             // 
             // txtEmailNguoiNhan
             // 
             this.txtEmailNguoiNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtEmailNguoiNhan.Location = new System.Drawing.Point(30, 100);
+            this.txtEmailNguoiNhan.Location = new System.Drawing.Point(60, 192);
+            this.txtEmailNguoiNhan.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtEmailNguoiNhan.Name = "txtEmailNguoiNhan";
-            this.txtEmailNguoiNhan.Size = new System.Drawing.Size(390, 23);
+            this.txtEmailNguoiNhan.Size = new System.Drawing.Size(776, 38);
             this.txtEmailNguoiNhan.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label3.Location = new System.Drawing.Point(30, 140);
+            this.label3.Location = new System.Drawing.Point(60, 269);
+            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 17);
+            this.label3.Size = new System.Drawing.Size(205, 31);
             this.label3.TabIndex = 3;
             this.label3.Text = "Email người gửi:";
             // 
             // txtEmailNguoiGui
             // 
             this.txtEmailNguoiGui.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtEmailNguoiGui.Location = new System.Drawing.Point(30, 160);
+            this.txtEmailNguoiGui.Location = new System.Drawing.Point(60, 308);
+            this.txtEmailNguoiGui.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtEmailNguoiGui.Name = "txtEmailNguoiGui";
-            this.txtEmailNguoiGui.Size = new System.Drawing.Size(390, 23);
+            this.txtEmailNguoiGui.Size = new System.Drawing.Size(776, 38);
             this.txtEmailNguoiGui.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label4.Location = new System.Drawing.Point(30, 200);
+            this.label4.Location = new System.Drawing.Point(60, 385);
+            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 17);
+            this.label4.Size = new System.Drawing.Size(252, 31);
             this.label4.TabIndex = 5;
             this.label4.Text = "Mật khẩu ứng dụng:";
             // 
             // txtMatKhau
             // 
             this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtMatKhau.Location = new System.Drawing.Point(30, 220);
+            this.txtMatKhau.Location = new System.Drawing.Point(60, 423);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.PasswordChar = '*';
-            this.txtMatKhau.Size = new System.Drawing.Size(390, 23);
+            this.txtMatKhau.Size = new System.Drawing.Size(776, 38);
             this.txtMatKhau.TabIndex = 6;
             // 
             // btnGui
@@ -124,9 +131,10 @@ namespace CoffeeManagement_ver2
             this.btnGui.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGui.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btnGui.ForeColor = System.Drawing.Color.White;
-            this.btnGui.Location = new System.Drawing.Point(250, 300);
+            this.btnGui.Location = new System.Drawing.Point(500, 577);
+            this.btnGui.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnGui.Name = "btnGui";
-            this.btnGui.Size = new System.Drawing.Size(80, 35);
+            this.btnGui.Size = new System.Drawing.Size(160, 67);
             this.btnGui.TabIndex = 7;
             this.btnGui.Text = "Gửi";
             this.btnGui.UseVisualStyleBackColor = false;
@@ -138,9 +146,10 @@ namespace CoffeeManagement_ver2
             this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btnHuy.ForeColor = System.Drawing.Color.White;
-            this.btnHuy.Location = new System.Drawing.Point(340, 300);
+            this.btnHuy.Location = new System.Drawing.Point(680, 577);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(80, 35);
+            this.btnHuy.Size = new System.Drawing.Size(160, 67);
             this.btnHuy.TabIndex = 8;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = false;
@@ -151,20 +160,21 @@ namespace CoffeeManagement_ver2
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(30, 250);
+            this.label5.Location = new System.Drawing.Point(60, 481);
+            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(380, 39);
+            this.label5.Size = new System.Drawing.Size(772, 78);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Lưu ý: Với Gmail, bạn cần tạo \"Mật khẩu ứng dụng\" thay vì mật khẩu thường.\r\nTruy" +
-    " cập: Cài đặt Gmail → Bảo mật → Xác minh 2 bước → Mật khẩu ứng dụng\r\nHoặc sử d" +
-    "ụng email khác hỗ trợ SMTP.";
+            this.label5.Text = "Lưu ý: Với Gmail, bạn cần tạo \"Mật khẩu ứng dụng\" thay vì mật khẩu thường.\r\nTruy " +
+    "cập: Cài đặt Gmail → Bảo mật → Xác minh 2 bước → Mật khẩu ứng dụng\r\nHoặc sử dụng" +
+    " email khác hỗ trợ SMTP.";
             // 
             // EmailForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(450, 350);
+            this.ClientSize = new System.Drawing.Size(900, 673);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnGui);
@@ -176,13 +186,13 @@ namespace CoffeeManagement_ver2
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "EmailForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gửi Email";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
