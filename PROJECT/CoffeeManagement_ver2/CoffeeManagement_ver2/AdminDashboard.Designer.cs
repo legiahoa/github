@@ -42,9 +42,10 @@
             // 
             this.lblWelcome.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblWelcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblWelcome.Location = new System.Drawing.Point(301, 34);
+            this.lblWelcome.Location = new System.Drawing.Point(401, 42);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(651, 151);
+            this.lblWelcome.Size = new System.Drawing.Size(868, 189);
             this.lblWelcome.TabIndex = 1;
             this.lblWelcome.Text = "Xin chào, Admin!";
             this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -59,10 +60,10 @@
             this.btnLogout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
             this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(898, 12);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnLogout.Location = new System.Drawing.Point(1197, 15);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(236, 56);
+            this.btnLogout.Size = new System.Drawing.Size(315, 70);
             this.btnLogout.TabIndex = 10;
             this.btnLogout.Text = "Đăng xuất";
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
@@ -77,9 +78,10 @@
             this.btnDonhang.FillColor = System.Drawing.Color.Firebrick;
             this.btnDonhang.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnDonhang.ForeColor = System.Drawing.Color.White;
-            this.btnDonhang.Location = new System.Drawing.Point(340, 252);
+            this.btnDonhang.Location = new System.Drawing.Point(453, 315);
+            this.btnDonhang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDonhang.Name = "btnDonhang";
-            this.btnDonhang.Size = new System.Drawing.Size(455, 152);
+            this.btnDonhang.Size = new System.Drawing.Size(607, 190);
             this.btnDonhang.TabIndex = 11;
             this.btnDonhang.Text = "Đơn hàng";
             this.btnDonhang.Click += new System.EventHandler(this.btnDonhang_Click);
@@ -94,9 +96,10 @@
             this.btnThucdon.FillColor = System.Drawing.Color.DarkOrange;
             this.btnThucdon.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThucdon.ForeColor = System.Drawing.Color.White;
-            this.btnThucdon.Location = new System.Drawing.Point(340, 452);
+            this.btnThucdon.Location = new System.Drawing.Point(453, 565);
+            this.btnThucdon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnThucdon.Name = "btnThucdon";
-            this.btnThucdon.Size = new System.Drawing.Size(455, 152);
+            this.btnThucdon.Size = new System.Drawing.Size(607, 190);
             this.btnThucdon.TabIndex = 12;
             this.btnThucdon.Text = "Thực đơn";
             this.btnThucdon.Click += new System.EventHandler(this.btnThucdon_Click);
@@ -111,9 +114,10 @@
             this.btnBan.FillColor = System.Drawing.Color.LimeGreen;
             this.btnBan.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnBan.ForeColor = System.Drawing.Color.White;
-            this.btnBan.Location = new System.Drawing.Point(340, 633);
+            this.btnBan.Location = new System.Drawing.Point(453, 791);
+            this.btnBan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBan.Name = "btnBan";
-            this.btnBan.Size = new System.Drawing.Size(455, 152);
+            this.btnBan.Size = new System.Drawing.Size(607, 190);
             this.btnBan.TabIndex = 13;
             this.btnBan.Text = "Bàn";
             this.btnBan.Click += new System.EventHandler(this.btnBan_Click);
@@ -128,9 +132,10 @@
             this.btnBaoCao.FillColor = System.Drawing.Color.BlueViolet;
             this.btnBaoCao.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnBaoCao.ForeColor = System.Drawing.Color.White;
-            this.btnBaoCao.Location = new System.Drawing.Point(340, 821);
+            this.btnBaoCao.Location = new System.Drawing.Point(453, 1026);
+            this.btnBaoCao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBaoCao.Name = "btnBaoCao";
-            this.btnBaoCao.Size = new System.Drawing.Size(455, 152);
+            this.btnBaoCao.Size = new System.Drawing.Size(607, 190);
             this.btnBaoCao.TabIndex = 14;
             this.btnBaoCao.Text = "Báo cáo";
             this.btnBaoCao.Click += new System.EventHandler(this.btnBaoCao_Click);
@@ -139,19 +144,22 @@
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::CoffeeManagement_ver2.Properties.Resources.vicf;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(44, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(225, 223);
+            this.pictureBox1.Size = new System.Drawing.Size(299, 278);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
             // AdminDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.RosyBrown;
-            this.ClientSize = new System.Drawing.Size(1146, 1035);
+            this.ClientSize = new System.Drawing.Size(1528, 1294);
             this.Controls.Add(this.btnBaoCao);
             this.Controls.Add(this.btnBan);
             this.Controls.Add(this.btnThucdon);
@@ -159,6 +167,7 @@
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblWelcome);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AdminDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminDashboard";

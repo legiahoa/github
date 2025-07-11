@@ -397,6 +397,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(2200, 1356);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Controls.Add(this.listView1);

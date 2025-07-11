@@ -146,6 +146,8 @@ namespace CoffeeManagement_ver2
 
         private void btnClose_Click(object sender, EventArgs e)
         {
+            AdminDashboard dashboard = new AdminDashboard();
+            dashboard.Show();
             this.Close();
         }
 
